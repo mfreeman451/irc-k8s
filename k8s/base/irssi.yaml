@@ -13,6 +13,8 @@ spec:
       labels:
         app: irssi-mosh
     spec:
+      imagePullSecrets:
+        - name: ghcr-io-cred
       initContainers:
         - name: init-permissions
           image: busybox
