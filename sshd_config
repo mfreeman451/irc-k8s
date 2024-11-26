@@ -3,14 +3,23 @@ AddressFamily any
 ListenAddress 0.0.0.0
 ListenAddress ::
 
+# Authentication settings
 PermitRootLogin no
 PubkeyAuthentication yes
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM yes
 
+# Logging
+SyslogFacility AUTH
+LogLevel DEBUG3
+
+# Other settings
 X11Forwarding yes
 PrintMotd no
-
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
+
+# Debug settings
+StrictModes yes
+AuthorizedKeysFile .ssh/authorized_keys

@@ -11,11 +11,6 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Verify SSH-related binaries are present
-RUN which sshd && \
-    which ssh-keygen && \
-    ssh-keygen -A
-
 # Create non-root user
 RUN useradd -m -s /bin/bash m && \
     mkdir -p /home/m/.ssh && \
@@ -34,7 +29,11 @@ RUN chown m:m /home/m/.ssh/authorized_keys && \
     chown m:m /home/m/ssh-backup/sshd_config && \
     chmod 600 /home/m/.ssh/authorized_keys && \
     chmod 600 /home/m/ssh-backup/sshd_config && \
-    chmod +x /entrypoint.sh
+    chmod +x /entrypoint.sh && \
+    # Verify authorized_keys file
+    cat /home/m/.ssh/authorized_keys && \
+    echo "Verifying file permissions:" && \
+    ls -la /home/m/.ssh/
 
 # Expose ports
 EXPOSE 22
