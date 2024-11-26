@@ -13,7 +13,6 @@ ListenAddress 0.0.0.0
 ListenAddress ::
 PermitRootLogin no
 PubkeyAuthentication yes
-AuthorizedKeysFile      .ssh/authorized_keys
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM no
@@ -25,11 +24,9 @@ AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 AllowUsers m
 StrictModes no
-LogLevel DEBUG3
 
 # For debugging
 SyslogFacility AUTH
-Debug3
 
 # More permissive key settings
 PubkeyAcceptedKeyTypes=+ssh-ed25519
