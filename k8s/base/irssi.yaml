@@ -13,11 +13,13 @@ spec:
       labels:
         app: irssi-mosh
     spec:
+      securityContext:
+        fsGroup: 1000
       imagePullSecrets:
         - name: ghcr-io-cred
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.1
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.4
           imagePullPolicy: Always
           stdin: true
           tty: true
