@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: irssi-mosh-ingress
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: "threadr-issuer"
+    external-dns.alpha.kubernetes.io/hostname: "slowburnin.net"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - slowburnin.net
+      secretName: slowburnin-tls
+  rules:
+    - host: slowburnin.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: irssi-mosh
+                port:
+                  number: 22
