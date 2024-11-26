@@ -1,66 +1,22 @@
 #!/bin/bash
+set -e
 
-set -x  # Enable debug output
+echo "Starting SSH server setup..."
 
-echo "Starting entrypoint script..."
-
-# Setup basic directories
-mkdir -p /etc/ssh
-mkdir -p /home/m/.ssh
-mkdir -p /run/sshd
-
-# Set correct permissions for /run/sshd
+# Ensure runtime directory has correct permissions
 chown root:root /run/sshd
 chmod 755 /run/sshd
 
-# Basic sshd config
-cat > /etc/ssh/sshd_config <<EOL
-Port 22
-AddressFamily any
-ListenAddress 0.0.0.0
-ListenAddress ::
+# Ensure .ssh directory exists with correct permissions
+mkdir -p /home/m/.ssh
+chown m:m /home/m/.ssh
+chmod 700 /home/m/.ssh
 
-Protocol 2
-HostKey /etc/ssh/ssh_host_rsa_key
-HostKey /etc/ssh/ssh_host_ecdsa_key
-HostKey /etc/ssh/ssh_host_ed25519_key
-
-PubkeyAuthentication yes
-PasswordAuthentication no
-ChallengeResponseAuthentication no
-PermitRootLogin no
-
-UsePAM yes
-X11Forwarding no
-PrintMotd no
-
-AcceptEnv LANG LC_*
-Subsystem sftp /usr/lib/openssh/sftp-server
-
-AllowUsers m
-StrictModes no
-
-AuthorizedKeysFile .ssh/authorized_keys
-LogLevel DEBUG3
-EOL
-
-# Generate host keys if needed
-if [ ! -f "/etc/ssh/ssh_host_rsa_key" ]; then
-    ssh-keygen -A
+# Set authorized_keys permissions if it exists
+if [ -f "/home/m/.ssh/authorized_keys" ]; then
+    chmod 600 /home/m/.ssh/authorized_keys
+    chown m:m /home/m/.ssh/authorized_keys
 fi
 
-# Set permissions
-chown -R root:root /etc/ssh
-chmod 755 /etc/ssh
-chmod 644 /etc/ssh/ssh_host_*.pub
-chmod 600 /etc/ssh/ssh_host_*_key
-chmod 600 /etc/ssh/sshd_config
-
-chown -R m:m /home/m
-chmod 755 /home/m
-chown -R m:m /home/m/.ssh
-chmod 700 /home/m/.ssh
-chmod 600 /home/m/.ssh/authorized_keys
-
-# Start sshd
+echo "Starting sshd..."
 exec /usr/sbin/sshd -D -e

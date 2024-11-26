@@ -15,28 +15,9 @@ spec:
     spec:
       imagePullSecrets:
         - name: ghcr-io-cred
-      initContainers:
-        - name: init-permissions
-          image: busybox
-          command:
-            - sh
-            - -c
-            - |
-              mkdir -p /home/m/.ssh /home/m/.irssi
-              chown -R 1000:1000 /home/m
-              chmod 700 /home/m/.ssh
-              touch /home/m/.ssh/authorized_keys
-              chmod 600 /home/m/.ssh/authorized_keys
-              # Ensure no stray host keys in .ssh directory
-              rm -f /home/m/.ssh/ssh_host_*
-          volumeMounts:
-            - mountPath: /home/m/.ssh
-              name: ssh-keys
-            - mountPath: /home/m/.irssi
-              name: irssi-config
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.28
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.29
           imagePullPolicy: Always
           stdin: true
           tty: true
@@ -51,42 +32,31 @@ spec:
               containerPort: 61000
               protocol: UDP
           livenessProbe:
-            tcpSocket:    # Changed from exec to tcpSocket for more reliability
+            tcpSocket:
               port: 22
             initialDelaySeconds: 30
             periodSeconds: 10
-            timeoutSeconds: 5
-            failureThreshold: 3
           readinessProbe:
             tcpSocket:
               port: 22
             initialDelaySeconds: 5
             periodSeconds: 10
-            timeoutSeconds: 5
-          resources:
-            requests:
-              memory: "128Mi"
-              cpu: "100m"
-            limits:
-              memory: "256Mi"
-              cpu: "200m"
           volumeMounts:
-            - mountPath: /home/m/.irssi
-              name: irssi-config
-            - mountPath: /home/m/.ssh
-              name: ssh-keys
-            - mountPath: /run/sshd
-              name: run-sshd
+            - name: ssh-config
+              mountPath: /etc/ssh/sshd_config
+              subPath: sshd_config
+            - name: ssh-config
+              mountPath: /home/m/.ssh/authorized_keys
+              subPath: authorized_keys
+            - name: irssi-config
+              mountPath: /home/m/.irssi
           securityContext:
-            privileged: true      # Required for sshd
-            capabilities:
-              add: ["NET_ADMIN", "SYS_ADMIN"]  # Required for mosh
+            privileged: true
       volumes:
+        - name: ssh-config
+          configMap:
+            name: ssh-config
+            defaultMode: 0600
         - name: irssi-config
           persistentVolumeClaim:
             claimName: irssi-config-pvc
-        - name: ssh-keys
-          persistentVolumeClaim:
-            claimName: ssh-keys-pvc
-        - name: run-sshd    # Added volume for sshd runtime directory
-          emptyDir: {}

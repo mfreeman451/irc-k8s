@@ -12,31 +12,22 @@ RUN apt-get update && apt-get install -y \
     iputils-ping \
     dnsutils \
     curl \
-    nano \
-    vim \
-    less \
-    net-tools \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Create non-root user
-RUN useradd -m -s /bin/bash m && \
-    mkdir -p /home/m/.ssh && \
+# Create user and required directories
+RUN useradd -u 1000 -m -s /bin/bash m && \
+    mkdir -p /home/m/.ssh /run/sshd && \
     chown -R m:m /home/m && \
-    mkdir -p /run/sshd && \
     chmod 700 /home/m/.ssh
 
-# Configure SSH
+# Generate host keys
+RUN ssh-keygen -A
+
+# Copy entrypoint
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# Pre-generate host keys
-RUN ssh-keygen -A && \
-    mkdir -p /run/sshd
+EXPOSE 22 60000-61000/udp
 
-# Expose ports
-EXPOSE 22
-EXPOSE 60000-61000/udp
-
-# Set entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
