@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: irssi-mosh
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: irssi-mosh
+  template:
+    metadata:
+      labels:
+        app: irssi-mosh
+    spec:
+      containers:
+        - name: irssi-mosh
+          image: ghcr.io/carverauto/irc/k8s:v0.0.1
+          stdin: true
+          tty: true
+          ports:
+            - containerPort: 22 # For SSH
+              protocol: TCP
+            - containerPort: 60000
+              protocol: UDP
+            - containerPort: 61000
+              protocol: UDP
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "200m"
+          volumeMounts:
+            - mountPath: /root/.irssi
+              name: irssi-config
+      volumes:
+        - name: irssi-config
+          emptyDir: {}
+
