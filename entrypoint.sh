@@ -14,7 +14,13 @@ echo "System Information:"
 uname -a
 id
 pwd
-ls -la /
+
+# Debug binaries
+echo "Binary locations:"
+which sshd || true
+which ssh-keygen || true
+ls -la /usr/sbin/sshd || true
+ls -la /usr/bin/ssh-keygen || true
 
 # Setup SSH directory
 echo "Setting up SSH directory..."
@@ -25,14 +31,17 @@ chmod 755 /etc/ssh
 echo "SSH directory contents before setup:"
 ls -la /etc/ssh/
 
-# Copy config
+# Copy config if not exists
 echo "Setting up sshd_config..."
 cp -v /home/m/ssh-backup/sshd_config /etc/ssh/sshd_config
 chmod 600 /etc/ssh/sshd_config
 
-# Generate host keys
-echo "Generating host keys..."
-/usr/sbin/ssh-keygen -A
+# Generate host keys if needed
+echo "Checking host keys..."
+if [ ! -f "/etc/ssh/ssh_host_rsa_key" ]; then
+    echo "Generating host keys..."
+    /usr/bin/ssh-keygen -A || /usr/sbin/ssh-keygen -A
+fi
 
 # Set permissions
 echo "Setting permissions..."
@@ -49,11 +58,8 @@ cat /etc/ssh/sshd_config
 # Test config
 echo "Testing sshd configuration..."
 /usr/sbin/sshd -t
+echo "sshd configuration test passed"
 
 # Start sshd
 echo "Starting sshd..."
-/usr/sbin/sshd -D -e &
-PID=$!
-
-# Wait for sshd
-wait $PID
+exec /usr/sbin/sshd -D -e

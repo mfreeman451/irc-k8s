@@ -5,8 +5,16 @@ RUN apt-get update && apt-get install -y \
     mosh \
     irssi \
     openssh-server \
+    openssh-client \
     procps \
-    && apt-get clean
+    sudo \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Verify SSH-related binaries are present
+RUN which sshd && \
+    which ssh-keygen && \
+    ssh-keygen -A
 
 # Create non-root user
 RUN useradd -m -s /bin/bash m && \
