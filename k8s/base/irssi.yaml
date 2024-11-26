@@ -13,13 +13,26 @@ spec:
       labels:
         app: irssi-mosh
     spec:
-      securityContext:
-        fsGroup: 1000
-      imagePullSecrets:
-        - name: ghcr-io-cred
+      initContainers:
+        - name: init-permissions
+          image: busybox
+          command:
+            - sh
+            - -c
+            - |
+              mkdir -p /home/m/.ssh /home/m/.irssi
+              chown -R 1000:1000 /home/m
+              chmod 700 /home/m/.ssh
+              touch /home/m/.ssh/authorized_keys
+              chmod 600 /home/m/.ssh/authorized_keys
+          volumeMounts:
+            - mountPath: /home/m/.ssh
+              name: ssh-keys
+            - mountPath: /home/m/.irssi
+              name: irssi-config
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.21
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.23
           imagePullPolicy: Always
           stdin: true
           tty: true
@@ -57,21 +70,13 @@ spec:
             - mountPath: /home/m/.irssi
               name: irssi-config
             - mountPath: /home/m/.ssh
-              name: ssh-user-keys
-            - mountPath: /etc/ssh
-              name: ssh-host-keys
+              name: ssh-keys
           securityContext:
-            runAsUser: 1000
-            runAsGroup: 1000
-            capabilities:
-              add: ["NET_ADMIN", "SYS_ADMIN"]
+            privileged: true
       volumes:
         - name: irssi-config
           persistentVolumeClaim:
             claimName: irssi-config-pvc
-        - name: ssh-user-keys
+        - name: ssh-keys
           persistentVolumeClaim:
-            claimName: ssh-user-keys-pvc
-        - name: ssh-host-keys
-          persistentVolumeClaim:
-            claimName: ssh-host-keys-pvc
+            claimName: ssh-keys-pvc
