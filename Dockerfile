@@ -14,13 +14,13 @@ RUN useradd -m -s /bin/bash m && \
     mkdir -p /run/sshd
 
 # Configure SSH
-COPY sshd_config /etc/ssh/sshd_config
+COPY sshd_config /etc/sshd_config.backup
 COPY authorized_keys /home/m/.ssh/authorized_keys
 COPY entrypoint.sh /entrypoint.sh
 
 RUN chown m:m /home/m/.ssh/authorized_keys && \
     chmod 600 /home/m/.ssh/authorized_keys && \
-    chmod 600 /etc/ssh/sshd_config && \
+    chmod 600 /etc/sshd_config.backup && \
     chmod +x /entrypoint.sh
 
 # Expose ports
