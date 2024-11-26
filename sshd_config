@@ -1,11 +1,17 @@
-# sshd_config
+cat > sshd_config << 'EOF'
 Port 22
+AddressFamily any
+ListenAddress 0.0.0.0
+ListenAddress ::
+
 PermitRootLogin no
 PubkeyAuthentication yes
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM yes
+
 X11Forwarding yes
 PrintMotd no
+
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server

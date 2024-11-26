@@ -11,20 +11,21 @@ RUN apt-get update && apt-get install -y \
 RUN useradd -m -s /bin/bash m && \
     mkdir -p /home/m/.ssh && \
     chown -R m:m /home/m && \
-    mkdir /run/sshd
+    mkdir -p /run/sshd
 
 # Configure SSH
 COPY sshd_config /etc/ssh/sshd_config
 COPY authorized_keys /home/m/.ssh/authorized_keys
-RUN chown m:m /home/m/.ssh/authorized_keys && \
-    chmod 600 /home/m/.ssh/authorized_keys
+COPY entrypoint.sh /entrypoint.sh
 
-# Generate SSH host keys
-RUN ssh-keygen -A
+RUN chown m:m /home/m/.ssh/authorized_keys && \
+    chmod 600 /home/m/.ssh/authorized_keys && \
+    chmod 600 /etc/ssh/sshd_config && \
+    chmod +x /entrypoint.sh
 
 # Expose ports
 EXPOSE 22
 EXPOSE 60000-61000/udp
 
-# Start SSH server and bash
-CMD ["/usr/sbin/sshd", "-D"]
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
