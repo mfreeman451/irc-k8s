@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
 RUN useradd -m -s /bin/bash m && \
     mkdir -p /home/m/.ssh && \
     chown -R m:m /home/m && \
-    mkdir -p /run/sshd
+    mkdir -p /run/sshd && \
+    chmod 700 /home/m/.ssh
 
 # Create a backup directory for SSH config
 RUN mkdir -p /home/m/ssh-backup
@@ -30,10 +31,12 @@ RUN chown m:m /home/m/.ssh/authorized_keys && \
     chmod 600 /home/m/.ssh/authorized_keys && \
     chmod 600 /home/m/ssh-backup/sshd_config && \
     chmod +x /entrypoint.sh && \
-    # Verify authorized_keys file
+    # Verify configuration
     cat /home/m/.ssh/authorized_keys && \
-    echo "Verifying file permissions:" && \
     ls -la /home/m/.ssh/
+
+# Pre-generate host keys
+RUN ssh-keygen -A
 
 # Expose ports
 EXPOSE 22
