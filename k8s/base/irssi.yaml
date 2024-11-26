@@ -17,13 +17,10 @@ spec:
         - name: ghcr-io-cred
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.31
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.33
           imagePullPolicy: Always
-          stdin: true
-          tty: true
           ports:
-            - name: ssh
-              containerPort: 22
+            - containerPort: 22
               protocol: TCP
             - name: mosh-start
               containerPort: 60000
@@ -31,22 +28,13 @@ spec:
             - name: mosh-end
               containerPort: 61000
               protocol: UDP
-          livenessProbe:
-            tcpSocket:
-              port: 22
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          readinessProbe:
-            tcpSocket:
-              port: 22
-            initialDelaySeconds: 5
-            periodSeconds: 10
           volumeMounts:
             - name: ssh-config
               mountPath: /etc/ssh/sshd_config
               subPath: sshd_config
             - name: ssh-config
-              mountPath: /config
+              mountPath: /home/m/.ssh/authorized_keys
+              subPath: authorized_keys
             - name: irssi-config
               mountPath: /home/m/.irssi
           securityContext:
