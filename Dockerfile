@@ -13,14 +13,19 @@ RUN useradd -m -s /bin/bash m && \
     chown -R m:m /home/m && \
     mkdir -p /run/sshd
 
+# Create a backup directory for SSH config that the non-root user can access
+RUN mkdir -p /home/m/ssh-backup && \
+    chown m:m /home/m/ssh-backup
+
 # Configure SSH
-COPY sshd_config /etc/sshd_config.backup
+COPY sshd_config /home/m/ssh-backup/sshd_config
 COPY authorized_keys /home/m/.ssh/authorized_keys
 COPY entrypoint.sh /entrypoint.sh
 
 RUN chown m:m /home/m/.ssh/authorized_keys && \
+    chown m:m /home/m/ssh-backup/sshd_config && \
     chmod 600 /home/m/.ssh/authorized_keys && \
-    chmod 600 /etc/sshd_config.backup && \
+    chmod 600 /home/m/ssh-backup/sshd_config && \
     chmod +x /entrypoint.sh
 
 # Expose ports
