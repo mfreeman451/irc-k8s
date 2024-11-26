@@ -15,20 +15,11 @@ spec:
     spec:
       securityContext:
         fsGroup: 1000
-      initContainers:
-        - name: init-ssh
-          image: busybox
-          command: ['sh', '-c', 'mkdir -p /etc/ssh && chown 1000:1000 /etc/ssh']
-          volumeMounts:
-            - mountPath: /etc/ssh
-              name: ssh-keys
-          securityContext:
-            runAsUser: 0
       imagePullSecrets:
         - name: ghcr-io-cred
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.7
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.10
           imagePullPolicy: Always
           stdin: true
           tty: true
@@ -42,6 +33,19 @@ spec:
             - name: mosh-end
               containerPort: 61000
               protocol: UDP
+          livenessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - ps aux | grep sshd | grep -v grep
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          readinessProbe:
+            tcpSocket:
+              port: 22
+            initialDelaySeconds: 5
+            periodSeconds: 10
           resources:
             requests:
               memory: "128Mi"
@@ -55,8 +59,10 @@ spec:
             - mountPath: /etc/ssh
               name: ssh-keys
           securityContext:
-            runAsUser: 1000
-            runAsGroup: 1000
+            runAsUser: 0
+            runAsGroup: 0
+            capabilities:
+              add: ["NET_ADMIN", "SYS_ADMIN"]
       volumes:
         - name: irssi-config
           persistentVolumeClaim:

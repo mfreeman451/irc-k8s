@@ -1,40 +1,59 @@
 #!/bin/bash
 
-set -x  # Enable debug output
+# Enable error handling
+set -e
+set -o pipefail
+
+# Handle signals
+trap 'kill -TERM $PID' TERM INT
 
 echo "Starting entrypoint script..."
 
-# Ensure /etc/ssh exists and has correct permissions
+# Debug system info
+echo "System Information:"
+uname -a
+id
+pwd
+ls -la /
+
+# Setup SSH directory
 echo "Setting up SSH directory..."
-if [ ! -d "/etc/ssh" ]; then
-    mkdir -p /etc/ssh
-fi
+mkdir -p /etc/ssh
 chmod 755 /etc/ssh
-chown -R m:m /etc/ssh
 
-# Copy base config if it doesn't exist
-if [ ! -f "/etc/ssh/sshd_config" ]; then
-    echo "Copying sshd_config from backup..."
-    cp /home/m/ssh-backup/sshd_config /etc/ssh/sshd_config
-    chmod 600 /etc/ssh/sshd_config
-    chown m:m /etc/ssh/sshd_config
-fi
-
-# Generate SSH host keys if they don't exist
-if [ ! -f "/etc/ssh/ssh_host_rsa_key" ]; then
-    echo "Generating SSH host keys..."
-    /usr/bin/ssh-keygen -A
-    chown -R m:m /etc/ssh
-fi
-
-echo "Directory listing of /etc/ssh:"
+# Debug SSH directory
+echo "SSH directory contents before setup:"
 ls -la /etc/ssh/
 
-echo "Content of sshd_config:"
-cat /etc/ssh/sshd_config || echo "Failed to read sshd_config"
+# Copy config
+echo "Setting up sshd_config..."
+cp -v /home/m/ssh-backup/sshd_config /etc/ssh/sshd_config
+chmod 600 /etc/ssh/sshd_config
 
-echo "Checking sshd status:"
-/usr/sbin/sshd -T || echo "sshd config test failed"
+# Generate host keys
+echo "Generating host keys..."
+/usr/sbin/ssh-keygen -A
 
-echo "Starting SSH daemon..."
-exec /usr/sbin/sshd -D -e
+# Set permissions
+echo "Setting permissions..."
+chown -R m:m /home/m/.ssh
+chmod 700 /home/m/.ssh
+chmod 600 /home/m/.ssh/authorized_keys
+
+# Debug final state
+echo "Final SSH directory contents:"
+ls -la /etc/ssh/
+echo "sshd_config contents:"
+cat /etc/ssh/sshd_config
+
+# Test config
+echo "Testing sshd configuration..."
+/usr/sbin/sshd -t
+
+# Start sshd
+echo "Starting sshd..."
+/usr/sbin/sshd -D -e &
+PID=$!
+
+# Wait for sshd
+wait $PID
