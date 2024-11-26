@@ -1,4 +1,3 @@
-cat > sshd_config << 'EOF'
 Port 22
 AddressFamily any
 ListenAddress 0.0.0.0
