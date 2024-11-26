@@ -6,6 +6,7 @@ ListenAddress ::
 # Authentication settings
 PermitRootLogin no
 PubkeyAuthentication yes
+AuthenticationMethods publickey
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM yes
@@ -23,3 +24,11 @@ Subsystem sftp /usr/lib/openssh/sftp-server
 # Debug settings
 StrictModes yes
 AuthorizedKeysFile .ssh/authorized_keys
+
+# Additional security
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+PrintLastLog yes
+TCPKeepAlive yes
+ClientAliveInterval 60
+ClientAliveCountMax 3
