@@ -26,22 +26,13 @@ RUN useradd -m -s /bin/bash m && \
     mkdir -p /run/sshd && \
     chmod 700 /home/m/.ssh
 
-# Create a backup directory for SSH config
-RUN mkdir -p /home/m/ssh-backup
-
 # Configure SSH
-COPY sshd_config /home/m/ssh-backup/sshd_config
-COPY authorized_keys /home/m/.ssh/authorized_keys
 COPY entrypoint.sh /entrypoint.sh
-
-RUN chown m:m /home/m/.ssh/authorized_keys && \
-    chown m:m /home/m/ssh-backup/sshd_config && \
-    chmod 600 /home/m/.ssh/authorized_keys && \
-    chmod 600 /home/m/ssh-backup/sshd_config && \
-    chmod +x /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 # Pre-generate host keys
-RUN ssh-keygen -A
+RUN ssh-keygen -A && \
+    mkdir -p /run/sshd
 
 # Expose ports
 EXPOSE 22

@@ -27,6 +27,8 @@ spec:
               chmod 700 /home/m/.ssh
               touch /home/m/.ssh/authorized_keys
               chmod 600 /home/m/.ssh/authorized_keys
+              # Ensure no stray host keys in .ssh directory
+              rm -f /home/m/.ssh/ssh_host_*
           volumeMounts:
             - mountPath: /home/m/.ssh
               name: ssh-keys
@@ -34,7 +36,7 @@ spec:
               name: irssi-config
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.26
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.27
           imagePullPolicy: Always
           stdin: true
           tty: true
@@ -49,18 +51,18 @@ spec:
               containerPort: 61000
               protocol: UDP
           livenessProbe:
-            exec:
-              command:
-                - /bin/sh
-                - -c
-                - ps aux | grep sshd | grep -v grep
-            initialDelaySeconds: 5
-            periodSeconds: 5
+            tcpSocket:    # Changed from exec to tcpSocket for more reliability
+              port: 22
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
           readinessProbe:
             tcpSocket:
               port: 22
             initialDelaySeconds: 5
             periodSeconds: 10
+            timeoutSeconds: 5
           resources:
             requests:
               memory: "128Mi"
@@ -73,8 +75,12 @@ spec:
               name: irssi-config
             - mountPath: /home/m/.ssh
               name: ssh-keys
+            - mountPath: /run/sshd
+              name: run-sshd
           securityContext:
-            privileged: true
+            privileged: true      # Required for sshd
+            capabilities:
+              add: ["NET_ADMIN", "SYS_ADMIN"]  # Required for mosh
       volumes:
         - name: irssi-config
           persistentVolumeClaim:
@@ -82,3 +88,5 @@ spec:
         - name: ssh-keys
           persistentVolumeClaim:
             claimName: ssh-keys-pvc
+        - name: run-sshd    # Added volume for sshd runtime directory
+          emptyDir: {}
