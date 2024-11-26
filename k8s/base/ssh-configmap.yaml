@@ -26,5 +26,5 @@ data:
     StrictModes no
     AuthorizedKeysFile .ssh/authorized_keys
     LogLevel DEBUG3
-  authorized_keys: |
+  authorized_keys: |-
     ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA2FW4CO+W1RQR4uIbEdzmXQSltWJl+fMgvs9WWfvrTq m@slowburnin.net
