@@ -56,4 +56,4 @@ chmod 600 /home/m/.ssh/authorized_keys
 rm -f /home/m/.ssh/sshd_config 2>/dev/null || true
 
 # Start sshd with debug mode and in foreground
-exec /usr/sbin/sshd -D -e
+exec /usr/sbin/sshd -D -d -e -p 22
