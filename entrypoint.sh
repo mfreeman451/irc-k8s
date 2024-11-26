@@ -9,6 +9,10 @@ mkdir -p /etc/ssh
 mkdir -p /home/m/.ssh
 mkdir -p /run/sshd
 
+# Set correct permissions for /run/sshd
+chown root:root /run/sshd
+chmod 755 /run/sshd
+
 # Basic sshd config
 cat > /etc/ssh/sshd_config <<EOL
 Port 22
