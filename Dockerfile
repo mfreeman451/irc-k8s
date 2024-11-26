@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     mosh \
     irssi \
     openssh-server \
-    sudo \
+    procps \
     && apt-get clean
 
 # Create non-root user
