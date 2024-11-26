@@ -8,13 +8,10 @@ metadata:
     metallb.universe.tf/allow-shared-ip: "true"
 spec:
   type: LoadBalancer
-  ipFamilyPolicy: PreferDualStack
-  ipFamilies:
-    - IPv6
-    - IPv4
   ports:
     - name: ssh
-      port: 22
+      port: 2222
+      targetPort: 22
       protocol: TCP
     - name: mosh
       port: 60000

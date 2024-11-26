@@ -15,6 +15,23 @@ spec:
     spec:
       imagePullSecrets:
         - name: ghcr-io-cred
+      initContainers:
+        - name: init-ssh
+          image: debian:bullseye
+          command:
+            - sh
+            - -c
+            - |
+              mkdir -p /home/m/.ssh
+              cp /config/authorized_keys /home/m/.ssh/
+              chown -R 1000:1000 /home/m
+              chmod 700 /home/m/.ssh
+              chmod 600 /home/m/.ssh/authorized_keys
+          volumeMounts:
+            - name: home
+              mountPath: /home/m
+            - name: ssh-config
+              mountPath: /config
       containers:
         - name: irssi-mosh
           image: ghcr.io/mfreeman451/irc-k8s:v0.0.33
@@ -32,9 +49,8 @@ spec:
             - name: ssh-config
               mountPath: /etc/ssh/sshd_config
               subPath: sshd_config
-            - name: ssh-config
-              mountPath: /home/m/.ssh/authorized_keys
-              subPath: authorized_keys
+            - name: home
+              mountPath: /home/m
             - name: irssi-config
               mountPath: /home/m/.irssi
           securityContext:
@@ -44,6 +60,8 @@ spec:
           configMap:
             name: ssh-config
             defaultMode: 0600
+        - name: home
+          emptyDir: {}
         - name: irssi-config
           persistentVolumeClaim:
             claimName: irssi-config-pvc

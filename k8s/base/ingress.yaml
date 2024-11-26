@@ -5,16 +5,16 @@ metadata:
   namespace: default
   annotations:
     cert-manager.io/cluster-issuer: "threadr-issuer"
-    external-dns.alpha.kubernetes.io/hostname: "slowburnin.net"
+    external-dns.alpha.kubernetes.io/hostname: "irc.slowburnin.net"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - slowburnin.net
-      secretName: slowburnin-tls
+        - irc.slowburnin.net
+      secretName: irc-slowburnin-tls
   rules:
-    - host: slowburnin.net
+    - host: irc.slowburnin.net
       http:
         paths:
           - path: /
@@ -23,4 +23,4 @@ spec:
               service:
                 name: irssi-mosh
                 port:
-                  number: 22
+                  number: 2222
