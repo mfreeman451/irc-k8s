@@ -41,6 +41,8 @@ spec:
           volumeMounts:
             - mountPath: /home/m/.irssi
               name: irssi-config
+            - mountPath: /etc/ssh
+              name: ssh-keys
           securityContext:
             runAsUser: 1000
             runAsGroup: 1000
@@ -48,3 +50,6 @@ spec:
         - name: irssi-config
           persistentVolumeClaim:
             claimName: irssi-config-pvc
+        - name: ssh-keys
+          persistentVolumeClaim:
+            claimName: ssh-keys-pvc

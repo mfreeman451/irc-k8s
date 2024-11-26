@@ -19,6 +19,9 @@ COPY authorized_keys /home/m/.ssh/authorized_keys
 RUN chown m:m /home/m/.ssh/authorized_keys && \
     chmod 600 /home/m/.ssh/authorized_keys
 
+# Generate SSH host keys
+RUN ssh-keygen -A
+
 # Expose ports
 EXPOSE 22
 EXPOSE 60000-61000/udp
