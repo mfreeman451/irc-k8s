@@ -19,7 +19,7 @@ spec:
         - name: ghcr-io-cred
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.11
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.17
           imagePullPolicy: Always
           stdin: true
           tty: true
