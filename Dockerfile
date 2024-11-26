@@ -1,11 +1,9 @@
 FROM debian:bullseye
 
+# Install required packages
 RUN apt-get update && apt-get install -y \
-    openssh-server \
     mosh \
     irssi \
-<<<<<<< HEAD
-=======
     openssh-server \
     openssh-client \
     procps \
@@ -19,27 +17,35 @@ RUN apt-get update && apt-get install -y \
     less \
     net-tools \
     && apt-get clean \
->>>>>>> 48fcf7f (🔧 udpating dockerfile)
     && rm -rf /var/lib/apt/lists/*
 
+# Create non-root user
 RUN useradd -m -s /bin/bash m && \
     mkdir -p /home/m/.ssh && \
-    mkdir -p /run/sshd
+    chown -R m:m /home/m && \
+    mkdir -p /run/sshd && \
+    chmod 700 /home/m/.ssh
 
+# Create a backup directory for SSH config
+RUN mkdir -p /home/m/ssh-backup
+
+# Configure SSH
+COPY sshd_config /home/m/ssh-backup/sshd_config
 COPY authorized_keys /home/m/.ssh/authorized_keys
-COPY sshd_config /etc/ssh/sshd_config
+COPY entrypoint.sh /entrypoint.sh
 
-RUN chown -R m:m /home/m/.ssh && \
-    chmod 700 /home/m/.ssh && \
+RUN chown m:m /home/m/.ssh/authorized_keys && \
+    chown m:m /home/m/ssh-backup/sshd_config && \
     chmod 600 /home/m/.ssh/authorized_keys && \
-<<<<<<< HEAD
-    chmod 600 /etc/ssh/sshd_config && \
-    ssh-keygen -A
-=======
     chmod 600 /home/m/ssh-backup/sshd_config && \
     chmod +x /entrypoint.sh
->>>>>>> 48fcf7f (🔧 udpating dockerfile)
 
-EXPOSE 22 60000-61000/udp
+# Pre-generate host keys
+RUN ssh-keygen -A
 
-CMD ["/usr/sbin/sshd", "-D", "-e"]
+# Expose ports
+EXPOSE 22
+EXPOSE 60000-61000/udp
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
