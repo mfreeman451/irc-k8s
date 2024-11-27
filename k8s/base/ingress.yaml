@@ -6,6 +6,8 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "threadr-issuer"
     external-dns.alpha.kubernetes.io/hostname: "irc.slowburnin.net"
+    external-dns.alpha.kubernetes.io/ttl: "120"
+    external-dns.alpha.kubernetes.io/target: "2001:470:c0b5:5::2"  # Your service IPv6
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: nginx
