@@ -34,7 +34,7 @@ spec:
               mountPath: /config
       containers:
         - name: irssi-mosh
-          image: ghcr.io/mfreeman451/irc-k8s:v0.0.34
+          image: ghcr.io/mfreeman451/irc-k8s:v0.0.38
           imagePullPolicy: Always
           ports:
             - containerPort: 22
