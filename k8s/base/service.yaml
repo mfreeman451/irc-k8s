@@ -8,6 +8,11 @@ metadata:
     metallb.universe.tf/allow-shared-ip: "true"
 spec:
   type: LoadBalancer
+  ipFamilyPolicy: PreferDualStack
+  ipFamilies:
+    - IPv6
+    - IPv4
+  externalTrafficPolicy: Local
   ports:
     - name: ssh
       port: 2222
