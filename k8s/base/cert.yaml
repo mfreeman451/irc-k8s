@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: irc-slowburnin-tls
+  namespace: default
+spec:
+  secretName: irc-slowburnin-tls
+  dnsNames:
+    - irc.slowburnin.net
+  issuerRef:
+    name: threadr-issuer
+    kind: ClusterIssuer
+  duration: 2160h
+  renewBefore: 360h
+  usages:
+    - digital signature
+    - key encipherment
+    - server auth
