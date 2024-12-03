@@ -18,13 +18,5011 @@ spec:
       port: 2222
       targetPort: 22
       protocol: TCP
-    - name: mosh
-      port: 60000
-      protocol: UDP
+    
+    - port: 60000
       targetPort: 60000
-    - name: mosh-end
-      port: 61000
       protocol: UDP
+      name: mosh-60000
+    
+    - port: 60001
+      targetPort: 60001
+      protocol: UDP
+      name: mosh-60001
+    
+    - port: 60002
+      targetPort: 60002
+      protocol: UDP
+      name: mosh-60002
+    
+    - port: 60003
+      targetPort: 60003
+      protocol: UDP
+      name: mosh-60003
+    
+    - port: 60004
+      targetPort: 60004
+      protocol: UDP
+      name: mosh-60004
+    
+    - port: 60005
+      targetPort: 60005
+      protocol: UDP
+      name: mosh-60005
+    
+    - port: 60006
+      targetPort: 60006
+      protocol: UDP
+      name: mosh-60006
+    
+    - port: 60007
+      targetPort: 60007
+      protocol: UDP
+      name: mosh-60007
+    
+    - port: 60008
+      targetPort: 60008
+      protocol: UDP
+      name: mosh-60008
+    
+    - port: 60009
+      targetPort: 60009
+      protocol: UDP
+      name: mosh-60009
+    
+    - port: 60010
+      targetPort: 60010
+      protocol: UDP
+      name: mosh-60010
+    
+    - port: 60011
+      targetPort: 60011
+      protocol: UDP
+      name: mosh-60011
+    
+    - port: 60012
+      targetPort: 60012
+      protocol: UDP
+      name: mosh-60012
+    
+    - port: 60013
+      targetPort: 60013
+      protocol: UDP
+      name: mosh-60013
+    
+    - port: 60014
+      targetPort: 60014
+      protocol: UDP
+      name: mosh-60014
+    
+    - port: 60015
+      targetPort: 60015
+      protocol: UDP
+      name: mosh-60015
+    
+    - port: 60016
+      targetPort: 60016
+      protocol: UDP
+      name: mosh-60016
+    
+    - port: 60017
+      targetPort: 60017
+      protocol: UDP
+      name: mosh-60017
+    
+    - port: 60018
+      targetPort: 60018
+      protocol: UDP
+      name: mosh-60018
+    
+    - port: 60019
+      targetPort: 60019
+      protocol: UDP
+      name: mosh-60019
+    
+    - port: 60020
+      targetPort: 60020
+      protocol: UDP
+      name: mosh-60020
+    
+    - port: 60021
+      targetPort: 60021
+      protocol: UDP
+      name: mosh-60021
+    
+    - port: 60022
+      targetPort: 60022
+      protocol: UDP
+      name: mosh-60022
+    
+    - port: 60023
+      targetPort: 60023
+      protocol: UDP
+      name: mosh-60023
+    
+    - port: 60024
+      targetPort: 60024
+      protocol: UDP
+      name: mosh-60024
+    
+    - port: 60025
+      targetPort: 60025
+      protocol: UDP
+      name: mosh-60025
+    
+    - port: 60026
+      targetPort: 60026
+      protocol: UDP
+      name: mosh-60026
+    
+    - port: 60027
+      targetPort: 60027
+      protocol: UDP
+      name: mosh-60027
+    
+    - port: 60028
+      targetPort: 60028
+      protocol: UDP
+      name: mosh-60028
+    
+    - port: 60029
+      targetPort: 60029
+      protocol: UDP
+      name: mosh-60029
+    
+    - port: 60030
+      targetPort: 60030
+      protocol: UDP
+      name: mosh-60030
+    
+    - port: 60031
+      targetPort: 60031
+      protocol: UDP
+      name: mosh-60031
+    
+    - port: 60032
+      targetPort: 60032
+      protocol: UDP
+      name: mosh-60032
+    
+    - port: 60033
+      targetPort: 60033
+      protocol: UDP
+      name: mosh-60033
+    
+    - port: 60034
+      targetPort: 60034
+      protocol: UDP
+      name: mosh-60034
+    
+    - port: 60035
+      targetPort: 60035
+      protocol: UDP
+      name: mosh-60035
+    
+    - port: 60036
+      targetPort: 60036
+      protocol: UDP
+      name: mosh-60036
+    
+    - port: 60037
+      targetPort: 60037
+      protocol: UDP
+      name: mosh-60037
+    
+    - port: 60038
+      targetPort: 60038
+      protocol: UDP
+      name: mosh-60038
+    
+    - port: 60039
+      targetPort: 60039
+      protocol: UDP
+      name: mosh-60039
+    
+    - port: 60040
+      targetPort: 60040
+      protocol: UDP
+      name: mosh-60040
+    
+    - port: 60041
+      targetPort: 60041
+      protocol: UDP
+      name: mosh-60041
+    
+    - port: 60042
+      targetPort: 60042
+      protocol: UDP
+      name: mosh-60042
+    
+    - port: 60043
+      targetPort: 60043
+      protocol: UDP
+      name: mosh-60043
+    
+    - port: 60044
+      targetPort: 60044
+      protocol: UDP
+      name: mosh-60044
+    
+    - port: 60045
+      targetPort: 60045
+      protocol: UDP
+      name: mosh-60045
+    
+    - port: 60046
+      targetPort: 60046
+      protocol: UDP
+      name: mosh-60046
+    
+    - port: 60047
+      targetPort: 60047
+      protocol: UDP
+      name: mosh-60047
+    
+    - port: 60048
+      targetPort: 60048
+      protocol: UDP
+      name: mosh-60048
+    
+    - port: 60049
+      targetPort: 60049
+      protocol: UDP
+      name: mosh-60049
+    
+    - port: 60050
+      targetPort: 60050
+      protocol: UDP
+      name: mosh-60050
+    
+    - port: 60051
+      targetPort: 60051
+      protocol: UDP
+      name: mosh-60051
+    
+    - port: 60052
+      targetPort: 60052
+      protocol: UDP
+      name: mosh-60052
+    
+    - port: 60053
+      targetPort: 60053
+      protocol: UDP
+      name: mosh-60053
+    
+    - port: 60054
+      targetPort: 60054
+      protocol: UDP
+      name: mosh-60054
+    
+    - port: 60055
+      targetPort: 60055
+      protocol: UDP
+      name: mosh-60055
+    
+    - port: 60056
+      targetPort: 60056
+      protocol: UDP
+      name: mosh-60056
+    
+    - port: 60057
+      targetPort: 60057
+      protocol: UDP
+      name: mosh-60057
+    
+    - port: 60058
+      targetPort: 60058
+      protocol: UDP
+      name: mosh-60058
+    
+    - port: 60059
+      targetPort: 60059
+      protocol: UDP
+      name: mosh-60059
+    
+    - port: 60060
+      targetPort: 60060
+      protocol: UDP
+      name: mosh-60060
+    
+    - port: 60061
+      targetPort: 60061
+      protocol: UDP
+      name: mosh-60061
+    
+    - port: 60062
+      targetPort: 60062
+      protocol: UDP
+      name: mosh-60062
+    
+    - port: 60063
+      targetPort: 60063
+      protocol: UDP
+      name: mosh-60063
+    
+    - port: 60064
+      targetPort: 60064
+      protocol: UDP
+      name: mosh-60064
+    
+    - port: 60065
+      targetPort: 60065
+      protocol: UDP
+      name: mosh-60065
+    
+    - port: 60066
+      targetPort: 60066
+      protocol: UDP
+      name: mosh-60066
+    
+    - port: 60067
+      targetPort: 60067
+      protocol: UDP
+      name: mosh-60067
+    
+    - port: 60068
+      targetPort: 60068
+      protocol: UDP
+      name: mosh-60068
+    
+    - port: 60069
+      targetPort: 60069
+      protocol: UDP
+      name: mosh-60069
+    
+    - port: 60070
+      targetPort: 60070
+      protocol: UDP
+      name: mosh-60070
+    
+    - port: 60071
+      targetPort: 60071
+      protocol: UDP
+      name: mosh-60071
+    
+    - port: 60072
+      targetPort: 60072
+      protocol: UDP
+      name: mosh-60072
+    
+    - port: 60073
+      targetPort: 60073
+      protocol: UDP
+      name: mosh-60073
+    
+    - port: 60074
+      targetPort: 60074
+      protocol: UDP
+      name: mosh-60074
+    
+    - port: 60075
+      targetPort: 60075
+      protocol: UDP
+      name: mosh-60075
+    
+    - port: 60076
+      targetPort: 60076
+      protocol: UDP
+      name: mosh-60076
+    
+    - port: 60077
+      targetPort: 60077
+      protocol: UDP
+      name: mosh-60077
+    
+    - port: 60078
+      targetPort: 60078
+      protocol: UDP
+      name: mosh-60078
+    
+    - port: 60079
+      targetPort: 60079
+      protocol: UDP
+      name: mosh-60079
+    
+    - port: 60080
+      targetPort: 60080
+      protocol: UDP
+      name: mosh-60080
+    
+    - port: 60081
+      targetPort: 60081
+      protocol: UDP
+      name: mosh-60081
+    
+    - port: 60082
+      targetPort: 60082
+      protocol: UDP
+      name: mosh-60082
+    
+    - port: 60083
+      targetPort: 60083
+      protocol: UDP
+      name: mosh-60083
+    
+    - port: 60084
+      targetPort: 60084
+      protocol: UDP
+      name: mosh-60084
+    
+    - port: 60085
+      targetPort: 60085
+      protocol: UDP
+      name: mosh-60085
+    
+    - port: 60086
+      targetPort: 60086
+      protocol: UDP
+      name: mosh-60086
+    
+    - port: 60087
+      targetPort: 60087
+      protocol: UDP
+      name: mosh-60087
+    
+    - port: 60088
+      targetPort: 60088
+      protocol: UDP
+      name: mosh-60088
+    
+    - port: 60089
+      targetPort: 60089
+      protocol: UDP
+      name: mosh-60089
+    
+    - port: 60090
+      targetPort: 60090
+      protocol: UDP
+      name: mosh-60090
+    
+    - port: 60091
+      targetPort: 60091
+      protocol: UDP
+      name: mosh-60091
+    
+    - port: 60092
+      targetPort: 60092
+      protocol: UDP
+      name: mosh-60092
+    
+    - port: 60093
+      targetPort: 60093
+      protocol: UDP
+      name: mosh-60093
+    
+    - port: 60094
+      targetPort: 60094
+      protocol: UDP
+      name: mosh-60094
+    
+    - port: 60095
+      targetPort: 60095
+      protocol: UDP
+      name: mosh-60095
+    
+    - port: 60096
+      targetPort: 60096
+      protocol: UDP
+      name: mosh-60096
+    
+    - port: 60097
+      targetPort: 60097
+      protocol: UDP
+      name: mosh-60097
+    
+    - port: 60098
+      targetPort: 60098
+      protocol: UDP
+      name: mosh-60098
+    
+    - port: 60099
+      targetPort: 60099
+      protocol: UDP
+      name: mosh-60099
+    
+    - port: 60100
+      targetPort: 60100
+      protocol: UDP
+      name: mosh-60100
+    
+    - port: 60101
+      targetPort: 60101
+      protocol: UDP
+      name: mosh-60101
+    
+    - port: 60102
+      targetPort: 60102
+      protocol: UDP
+      name: mosh-60102
+    
+    - port: 60103
+      targetPort: 60103
+      protocol: UDP
+      name: mosh-60103
+    
+    - port: 60104
+      targetPort: 60104
+      protocol: UDP
+      name: mosh-60104
+    
+    - port: 60105
+      targetPort: 60105
+      protocol: UDP
+      name: mosh-60105
+    
+    - port: 60106
+      targetPort: 60106
+      protocol: UDP
+      name: mosh-60106
+    
+    - port: 60107
+      targetPort: 60107
+      protocol: UDP
+      name: mosh-60107
+    
+    - port: 60108
+      targetPort: 60108
+      protocol: UDP
+      name: mosh-60108
+    
+    - port: 60109
+      targetPort: 60109
+      protocol: UDP
+      name: mosh-60109
+    
+    - port: 60110
+      targetPort: 60110
+      protocol: UDP
+      name: mosh-60110
+    
+    - port: 60111
+      targetPort: 60111
+      protocol: UDP
+      name: mosh-60111
+    
+    - port: 60112
+      targetPort: 60112
+      protocol: UDP
+      name: mosh-60112
+    
+    - port: 60113
+      targetPort: 60113
+      protocol: UDP
+      name: mosh-60113
+    
+    - port: 60114
+      targetPort: 60114
+      protocol: UDP
+      name: mosh-60114
+    
+    - port: 60115
+      targetPort: 60115
+      protocol: UDP
+      name: mosh-60115
+    
+    - port: 60116
+      targetPort: 60116
+      protocol: UDP
+      name: mosh-60116
+    
+    - port: 60117
+      targetPort: 60117
+      protocol: UDP
+      name: mosh-60117
+    
+    - port: 60118
+      targetPort: 60118
+      protocol: UDP
+      name: mosh-60118
+    
+    - port: 60119
+      targetPort: 60119
+      protocol: UDP
+      name: mosh-60119
+    
+    - port: 60120
+      targetPort: 60120
+      protocol: UDP
+      name: mosh-60120
+    
+    - port: 60121
+      targetPort: 60121
+      protocol: UDP
+      name: mosh-60121
+    
+    - port: 60122
+      targetPort: 60122
+      protocol: UDP
+      name: mosh-60122
+    
+    - port: 60123
+      targetPort: 60123
+      protocol: UDP
+      name: mosh-60123
+    
+    - port: 60124
+      targetPort: 60124
+      protocol: UDP
+      name: mosh-60124
+    
+    - port: 60125
+      targetPort: 60125
+      protocol: UDP
+      name: mosh-60125
+    
+    - port: 60126
+      targetPort: 60126
+      protocol: UDP
+      name: mosh-60126
+    
+    - port: 60127
+      targetPort: 60127
+      protocol: UDP
+      name: mosh-60127
+    
+    - port: 60128
+      targetPort: 60128
+      protocol: UDP
+      name: mosh-60128
+    
+    - port: 60129
+      targetPort: 60129
+      protocol: UDP
+      name: mosh-60129
+    
+    - port: 60130
+      targetPort: 60130
+      protocol: UDP
+      name: mosh-60130
+    
+    - port: 60131
+      targetPort: 60131
+      protocol: UDP
+      name: mosh-60131
+    
+    - port: 60132
+      targetPort: 60132
+      protocol: UDP
+      name: mosh-60132
+    
+    - port: 60133
+      targetPort: 60133
+      protocol: UDP
+      name: mosh-60133
+    
+    - port: 60134
+      targetPort: 60134
+      protocol: UDP
+      name: mosh-60134
+    
+    - port: 60135
+      targetPort: 60135
+      protocol: UDP
+      name: mosh-60135
+    
+    - port: 60136
+      targetPort: 60136
+      protocol: UDP
+      name: mosh-60136
+    
+    - port: 60137
+      targetPort: 60137
+      protocol: UDP
+      name: mosh-60137
+    
+    - port: 60138
+      targetPort: 60138
+      protocol: UDP
+      name: mosh-60138
+    
+    - port: 60139
+      targetPort: 60139
+      protocol: UDP
+      name: mosh-60139
+    
+    - port: 60140
+      targetPort: 60140
+      protocol: UDP
+      name: mosh-60140
+    
+    - port: 60141
+      targetPort: 60141
+      protocol: UDP
+      name: mosh-60141
+    
+    - port: 60142
+      targetPort: 60142
+      protocol: UDP
+      name: mosh-60142
+    
+    - port: 60143
+      targetPort: 60143
+      protocol: UDP
+      name: mosh-60143
+    
+    - port: 60144
+      targetPort: 60144
+      protocol: UDP
+      name: mosh-60144
+    
+    - port: 60145
+      targetPort: 60145
+      protocol: UDP
+      name: mosh-60145
+    
+    - port: 60146
+      targetPort: 60146
+      protocol: UDP
+      name: mosh-60146
+    
+    - port: 60147
+      targetPort: 60147
+      protocol: UDP
+      name: mosh-60147
+    
+    - port: 60148
+      targetPort: 60148
+      protocol: UDP
+      name: mosh-60148
+    
+    - port: 60149
+      targetPort: 60149
+      protocol: UDP
+      name: mosh-60149
+    
+    - port: 60150
+      targetPort: 60150
+      protocol: UDP
+      name: mosh-60150
+    
+    - port: 60151
+      targetPort: 60151
+      protocol: UDP
+      name: mosh-60151
+    
+    - port: 60152
+      targetPort: 60152
+      protocol: UDP
+      name: mosh-60152
+    
+    - port: 60153
+      targetPort: 60153
+      protocol: UDP
+      name: mosh-60153
+    
+    - port: 60154
+      targetPort: 60154
+      protocol: UDP
+      name: mosh-60154
+    
+    - port: 60155
+      targetPort: 60155
+      protocol: UDP
+      name: mosh-60155
+    
+    - port: 60156
+      targetPort: 60156
+      protocol: UDP
+      name: mosh-60156
+    
+    - port: 60157
+      targetPort: 60157
+      protocol: UDP
+      name: mosh-60157
+    
+    - port: 60158
+      targetPort: 60158
+      protocol: UDP
+      name: mosh-60158
+    
+    - port: 60159
+      targetPort: 60159
+      protocol: UDP
+      name: mosh-60159
+    
+    - port: 60160
+      targetPort: 60160
+      protocol: UDP
+      name: mosh-60160
+    
+    - port: 60161
+      targetPort: 60161
+      protocol: UDP
+      name: mosh-60161
+    
+    - port: 60162
+      targetPort: 60162
+      protocol: UDP
+      name: mosh-60162
+    
+    - port: 60163
+      targetPort: 60163
+      protocol: UDP
+      name: mosh-60163
+    
+    - port: 60164
+      targetPort: 60164
+      protocol: UDP
+      name: mosh-60164
+    
+    - port: 60165
+      targetPort: 60165
+      protocol: UDP
+      name: mosh-60165
+    
+    - port: 60166
+      targetPort: 60166
+      protocol: UDP
+      name: mosh-60166
+    
+    - port: 60167
+      targetPort: 60167
+      protocol: UDP
+      name: mosh-60167
+    
+    - port: 60168
+      targetPort: 60168
+      protocol: UDP
+      name: mosh-60168
+    
+    - port: 60169
+      targetPort: 60169
+      protocol: UDP
+      name: mosh-60169
+    
+    - port: 60170
+      targetPort: 60170
+      protocol: UDP
+      name: mosh-60170
+    
+    - port: 60171
+      targetPort: 60171
+      protocol: UDP
+      name: mosh-60171
+    
+    - port: 60172
+      targetPort: 60172
+      protocol: UDP
+      name: mosh-60172
+    
+    - port: 60173
+      targetPort: 60173
+      protocol: UDP
+      name: mosh-60173
+    
+    - port: 60174
+      targetPort: 60174
+      protocol: UDP
+      name: mosh-60174
+    
+    - port: 60175
+      targetPort: 60175
+      protocol: UDP
+      name: mosh-60175
+    
+    - port: 60176
+      targetPort: 60176
+      protocol: UDP
+      name: mosh-60176
+    
+    - port: 60177
+      targetPort: 60177
+      protocol: UDP
+      name: mosh-60177
+    
+    - port: 60178
+      targetPort: 60178
+      protocol: UDP
+      name: mosh-60178
+    
+    - port: 60179
+      targetPort: 60179
+      protocol: UDP
+      name: mosh-60179
+    
+    - port: 60180
+      targetPort: 60180
+      protocol: UDP
+      name: mosh-60180
+    
+    - port: 60181
+      targetPort: 60181
+      protocol: UDP
+      name: mosh-60181
+    
+    - port: 60182
+      targetPort: 60182
+      protocol: UDP
+      name: mosh-60182
+    
+    - port: 60183
+      targetPort: 60183
+      protocol: UDP
+      name: mosh-60183
+    
+    - port: 60184
+      targetPort: 60184
+      protocol: UDP
+      name: mosh-60184
+    
+    - port: 60185
+      targetPort: 60185
+      protocol: UDP
+      name: mosh-60185
+    
+    - port: 60186
+      targetPort: 60186
+      protocol: UDP
+      name: mosh-60186
+    
+    - port: 60187
+      targetPort: 60187
+      protocol: UDP
+      name: mosh-60187
+    
+    - port: 60188
+      targetPort: 60188
+      protocol: UDP
+      name: mosh-60188
+    
+    - port: 60189
+      targetPort: 60189
+      protocol: UDP
+      name: mosh-60189
+    
+    - port: 60190
+      targetPort: 60190
+      protocol: UDP
+      name: mosh-60190
+    
+    - port: 60191
+      targetPort: 60191
+      protocol: UDP
+      name: mosh-60191
+    
+    - port: 60192
+      targetPort: 60192
+      protocol: UDP
+      name: mosh-60192
+    
+    - port: 60193
+      targetPort: 60193
+      protocol: UDP
+      name: mosh-60193
+    
+    - port: 60194
+      targetPort: 60194
+      protocol: UDP
+      name: mosh-60194
+    
+    - port: 60195
+      targetPort: 60195
+      protocol: UDP
+      name: mosh-60195
+    
+    - port: 60196
+      targetPort: 60196
+      protocol: UDP
+      name: mosh-60196
+    
+    - port: 60197
+      targetPort: 60197
+      protocol: UDP
+      name: mosh-60197
+    
+    - port: 60198
+      targetPort: 60198
+      protocol: UDP
+      name: mosh-60198
+    
+    - port: 60199
+      targetPort: 60199
+      protocol: UDP
+      name: mosh-60199
+    
+    - port: 60200
+      targetPort: 60200
+      protocol: UDP
+      name: mosh-60200
+    
+    - port: 60201
+      targetPort: 60201
+      protocol: UDP
+      name: mosh-60201
+    
+    - port: 60202
+      targetPort: 60202
+      protocol: UDP
+      name: mosh-60202
+    
+    - port: 60203
+      targetPort: 60203
+      protocol: UDP
+      name: mosh-60203
+    
+    - port: 60204
+      targetPort: 60204
+      protocol: UDP
+      name: mosh-60204
+    
+    - port: 60205
+      targetPort: 60205
+      protocol: UDP
+      name: mosh-60205
+    
+    - port: 60206
+      targetPort: 60206
+      protocol: UDP
+      name: mosh-60206
+    
+    - port: 60207
+      targetPort: 60207
+      protocol: UDP
+      name: mosh-60207
+    
+    - port: 60208
+      targetPort: 60208
+      protocol: UDP
+      name: mosh-60208
+    
+    - port: 60209
+      targetPort: 60209
+      protocol: UDP
+      name: mosh-60209
+    
+    - port: 60210
+      targetPort: 60210
+      protocol: UDP
+      name: mosh-60210
+    
+    - port: 60211
+      targetPort: 60211
+      protocol: UDP
+      name: mosh-60211
+    
+    - port: 60212
+      targetPort: 60212
+      protocol: UDP
+      name: mosh-60212
+    
+    - port: 60213
+      targetPort: 60213
+      protocol: UDP
+      name: mosh-60213
+    
+    - port: 60214
+      targetPort: 60214
+      protocol: UDP
+      name: mosh-60214
+    
+    - port: 60215
+      targetPort: 60215
+      protocol: UDP
+      name: mosh-60215
+    
+    - port: 60216
+      targetPort: 60216
+      protocol: UDP
+      name: mosh-60216
+    
+    - port: 60217
+      targetPort: 60217
+      protocol: UDP
+      name: mosh-60217
+    
+    - port: 60218
+      targetPort: 60218
+      protocol: UDP
+      name: mosh-60218
+    
+    - port: 60219
+      targetPort: 60219
+      protocol: UDP
+      name: mosh-60219
+    
+    - port: 60220
+      targetPort: 60220
+      protocol: UDP
+      name: mosh-60220
+    
+    - port: 60221
+      targetPort: 60221
+      protocol: UDP
+      name: mosh-60221
+    
+    - port: 60222
+      targetPort: 60222
+      protocol: UDP
+      name: mosh-60222
+    
+    - port: 60223
+      targetPort: 60223
+      protocol: UDP
+      name: mosh-60223
+    
+    - port: 60224
+      targetPort: 60224
+      protocol: UDP
+      name: mosh-60224
+    
+    - port: 60225
+      targetPort: 60225
+      protocol: UDP
+      name: mosh-60225
+    
+    - port: 60226
+      targetPort: 60226
+      protocol: UDP
+      name: mosh-60226
+    
+    - port: 60227
+      targetPort: 60227
+      protocol: UDP
+      name: mosh-60227
+    
+    - port: 60228
+      targetPort: 60228
+      protocol: UDP
+      name: mosh-60228
+    
+    - port: 60229
+      targetPort: 60229
+      protocol: UDP
+      name: mosh-60229
+    
+    - port: 60230
+      targetPort: 60230
+      protocol: UDP
+      name: mosh-60230
+    
+    - port: 60231
+      targetPort: 60231
+      protocol: UDP
+      name: mosh-60231
+    
+    - port: 60232
+      targetPort: 60232
+      protocol: UDP
+      name: mosh-60232
+    
+    - port: 60233
+      targetPort: 60233
+      protocol: UDP
+      name: mosh-60233
+    
+    - port: 60234
+      targetPort: 60234
+      protocol: UDP
+      name: mosh-60234
+    
+    - port: 60235
+      targetPort: 60235
+      protocol: UDP
+      name: mosh-60235
+    
+    - port: 60236
+      targetPort: 60236
+      protocol: UDP
+      name: mosh-60236
+    
+    - port: 60237
+      targetPort: 60237
+      protocol: UDP
+      name: mosh-60237
+    
+    - port: 60238
+      targetPort: 60238
+      protocol: UDP
+      name: mosh-60238
+    
+    - port: 60239
+      targetPort: 60239
+      protocol: UDP
+      name: mosh-60239
+    
+    - port: 60240
+      targetPort: 60240
+      protocol: UDP
+      name: mosh-60240
+    
+    - port: 60241
+      targetPort: 60241
+      protocol: UDP
+      name: mosh-60241
+    
+    - port: 60242
+      targetPort: 60242
+      protocol: UDP
+      name: mosh-60242
+    
+    - port: 60243
+      targetPort: 60243
+      protocol: UDP
+      name: mosh-60243
+    
+    - port: 60244
+      targetPort: 60244
+      protocol: UDP
+      name: mosh-60244
+    
+    - port: 60245
+      targetPort: 60245
+      protocol: UDP
+      name: mosh-60245
+    
+    - port: 60246
+      targetPort: 60246
+      protocol: UDP
+      name: mosh-60246
+    
+    - port: 60247
+      targetPort: 60247
+      protocol: UDP
+      name: mosh-60247
+    
+    - port: 60248
+      targetPort: 60248
+      protocol: UDP
+      name: mosh-60248
+    
+    - port: 60249
+      targetPort: 60249
+      protocol: UDP
+      name: mosh-60249
+    
+    - port: 60250
+      targetPort: 60250
+      protocol: UDP
+      name: mosh-60250
+    
+    - port: 60251
+      targetPort: 60251
+      protocol: UDP
+      name: mosh-60251
+    
+    - port: 60252
+      targetPort: 60252
+      protocol: UDP
+      name: mosh-60252
+    
+    - port: 60253
+      targetPort: 60253
+      protocol: UDP
+      name: mosh-60253
+    
+    - port: 60254
+      targetPort: 60254
+      protocol: UDP
+      name: mosh-60254
+    
+    - port: 60255
+      targetPort: 60255
+      protocol: UDP
+      name: mosh-60255
+    
+    - port: 60256
+      targetPort: 60256
+      protocol: UDP
+      name: mosh-60256
+    
+    - port: 60257
+      targetPort: 60257
+      protocol: UDP
+      name: mosh-60257
+    
+    - port: 60258
+      targetPort: 60258
+      protocol: UDP
+      name: mosh-60258
+    
+    - port: 60259
+      targetPort: 60259
+      protocol: UDP
+      name: mosh-60259
+    
+    - port: 60260
+      targetPort: 60260
+      protocol: UDP
+      name: mosh-60260
+    
+    - port: 60261
+      targetPort: 60261
+      protocol: UDP
+      name: mosh-60261
+    
+    - port: 60262
+      targetPort: 60262
+      protocol: UDP
+      name: mosh-60262
+    
+    - port: 60263
+      targetPort: 60263
+      protocol: UDP
+      name: mosh-60263
+    
+    - port: 60264
+      targetPort: 60264
+      protocol: UDP
+      name: mosh-60264
+    
+    - port: 60265
+      targetPort: 60265
+      protocol: UDP
+      name: mosh-60265
+    
+    - port: 60266
+      targetPort: 60266
+      protocol: UDP
+      name: mosh-60266
+    
+    - port: 60267
+      targetPort: 60267
+      protocol: UDP
+      name: mosh-60267
+    
+    - port: 60268
+      targetPort: 60268
+      protocol: UDP
+      name: mosh-60268
+    
+    - port: 60269
+      targetPort: 60269
+      protocol: UDP
+      name: mosh-60269
+    
+    - port: 60270
+      targetPort: 60270
+      protocol: UDP
+      name: mosh-60270
+    
+    - port: 60271
+      targetPort: 60271
+      protocol: UDP
+      name: mosh-60271
+    
+    - port: 60272
+      targetPort: 60272
+      protocol: UDP
+      name: mosh-60272
+    
+    - port: 60273
+      targetPort: 60273
+      protocol: UDP
+      name: mosh-60273
+    
+    - port: 60274
+      targetPort: 60274
+      protocol: UDP
+      name: mosh-60274
+    
+    - port: 60275
+      targetPort: 60275
+      protocol: UDP
+      name: mosh-60275
+    
+    - port: 60276
+      targetPort: 60276
+      protocol: UDP
+      name: mosh-60276
+    
+    - port: 60277
+      targetPort: 60277
+      protocol: UDP
+      name: mosh-60277
+    
+    - port: 60278
+      targetPort: 60278
+      protocol: UDP
+      name: mosh-60278
+    
+    - port: 60279
+      targetPort: 60279
+      protocol: UDP
+      name: mosh-60279
+    
+    - port: 60280
+      targetPort: 60280
+      protocol: UDP
+      name: mosh-60280
+    
+    - port: 60281
+      targetPort: 60281
+      protocol: UDP
+      name: mosh-60281
+    
+    - port: 60282
+      targetPort: 60282
+      protocol: UDP
+      name: mosh-60282
+    
+    - port: 60283
+      targetPort: 60283
+      protocol: UDP
+      name: mosh-60283
+    
+    - port: 60284
+      targetPort: 60284
+      protocol: UDP
+      name: mosh-60284
+    
+    - port: 60285
+      targetPort: 60285
+      protocol: UDP
+      name: mosh-60285
+    
+    - port: 60286
+      targetPort: 60286
+      protocol: UDP
+      name: mosh-60286
+    
+    - port: 60287
+      targetPort: 60287
+      protocol: UDP
+      name: mosh-60287
+    
+    - port: 60288
+      targetPort: 60288
+      protocol: UDP
+      name: mosh-60288
+    
+    - port: 60289
+      targetPort: 60289
+      protocol: UDP
+      name: mosh-60289
+    
+    - port: 60290
+      targetPort: 60290
+      protocol: UDP
+      name: mosh-60290
+    
+    - port: 60291
+      targetPort: 60291
+      protocol: UDP
+      name: mosh-60291
+    
+    - port: 60292
+      targetPort: 60292
+      protocol: UDP
+      name: mosh-60292
+    
+    - port: 60293
+      targetPort: 60293
+      protocol: UDP
+      name: mosh-60293
+    
+    - port: 60294
+      targetPort: 60294
+      protocol: UDP
+      name: mosh-60294
+    
+    - port: 60295
+      targetPort: 60295
+      protocol: UDP
+      name: mosh-60295
+    
+    - port: 60296
+      targetPort: 60296
+      protocol: UDP
+      name: mosh-60296
+    
+    - port: 60297
+      targetPort: 60297
+      protocol: UDP
+      name: mosh-60297
+    
+    - port: 60298
+      targetPort: 60298
+      protocol: UDP
+      name: mosh-60298
+    
+    - port: 60299
+      targetPort: 60299
+      protocol: UDP
+      name: mosh-60299
+    
+    - port: 60300
+      targetPort: 60300
+      protocol: UDP
+      name: mosh-60300
+    
+    - port: 60301
+      targetPort: 60301
+      protocol: UDP
+      name: mosh-60301
+    
+    - port: 60302
+      targetPort: 60302
+      protocol: UDP
+      name: mosh-60302
+    
+    - port: 60303
+      targetPort: 60303
+      protocol: UDP
+      name: mosh-60303
+    
+    - port: 60304
+      targetPort: 60304
+      protocol: UDP
+      name: mosh-60304
+    
+    - port: 60305
+      targetPort: 60305
+      protocol: UDP
+      name: mosh-60305
+    
+    - port: 60306
+      targetPort: 60306
+      protocol: UDP
+      name: mosh-60306
+    
+    - port: 60307
+      targetPort: 60307
+      protocol: UDP
+      name: mosh-60307
+    
+    - port: 60308
+      targetPort: 60308
+      protocol: UDP
+      name: mosh-60308
+    
+    - port: 60309
+      targetPort: 60309
+      protocol: UDP
+      name: mosh-60309
+    
+    - port: 60310
+      targetPort: 60310
+      protocol: UDP
+      name: mosh-60310
+    
+    - port: 60311
+      targetPort: 60311
+      protocol: UDP
+      name: mosh-60311
+    
+    - port: 60312
+      targetPort: 60312
+      protocol: UDP
+      name: mosh-60312
+    
+    - port: 60313
+      targetPort: 60313
+      protocol: UDP
+      name: mosh-60313
+    
+    - port: 60314
+      targetPort: 60314
+      protocol: UDP
+      name: mosh-60314
+    
+    - port: 60315
+      targetPort: 60315
+      protocol: UDP
+      name: mosh-60315
+    
+    - port: 60316
+      targetPort: 60316
+      protocol: UDP
+      name: mosh-60316
+    
+    - port: 60317
+      targetPort: 60317
+      protocol: UDP
+      name: mosh-60317
+    
+    - port: 60318
+      targetPort: 60318
+      protocol: UDP
+      name: mosh-60318
+    
+    - port: 60319
+      targetPort: 60319
+      protocol: UDP
+      name: mosh-60319
+    
+    - port: 60320
+      targetPort: 60320
+      protocol: UDP
+      name: mosh-60320
+    
+    - port: 60321
+      targetPort: 60321
+      protocol: UDP
+      name: mosh-60321
+    
+    - port: 60322
+      targetPort: 60322
+      protocol: UDP
+      name: mosh-60322
+    
+    - port: 60323
+      targetPort: 60323
+      protocol: UDP
+      name: mosh-60323
+    
+    - port: 60324
+      targetPort: 60324
+      protocol: UDP
+      name: mosh-60324
+    
+    - port: 60325
+      targetPort: 60325
+      protocol: UDP
+      name: mosh-60325
+    
+    - port: 60326
+      targetPort: 60326
+      protocol: UDP
+      name: mosh-60326
+    
+    - port: 60327
+      targetPort: 60327
+      protocol: UDP
+      name: mosh-60327
+    
+    - port: 60328
+      targetPort: 60328
+      protocol: UDP
+      name: mosh-60328
+    
+    - port: 60329
+      targetPort: 60329
+      protocol: UDP
+      name: mosh-60329
+    
+    - port: 60330
+      targetPort: 60330
+      protocol: UDP
+      name: mosh-60330
+    
+    - port: 60331
+      targetPort: 60331
+      protocol: UDP
+      name: mosh-60331
+    
+    - port: 60332
+      targetPort: 60332
+      protocol: UDP
+      name: mosh-60332
+    
+    - port: 60333
+      targetPort: 60333
+      protocol: UDP
+      name: mosh-60333
+    
+    - port: 60334
+      targetPort: 60334
+      protocol: UDP
+      name: mosh-60334
+    
+    - port: 60335
+      targetPort: 60335
+      protocol: UDP
+      name: mosh-60335
+    
+    - port: 60336
+      targetPort: 60336
+      protocol: UDP
+      name: mosh-60336
+    
+    - port: 60337
+      targetPort: 60337
+      protocol: UDP
+      name: mosh-60337
+    
+    - port: 60338
+      targetPort: 60338
+      protocol: UDP
+      name: mosh-60338
+    
+    - port: 60339
+      targetPort: 60339
+      protocol: UDP
+      name: mosh-60339
+    
+    - port: 60340
+      targetPort: 60340
+      protocol: UDP
+      name: mosh-60340
+    
+    - port: 60341
+      targetPort: 60341
+      protocol: UDP
+      name: mosh-60341
+    
+    - port: 60342
+      targetPort: 60342
+      protocol: UDP
+      name: mosh-60342
+    
+    - port: 60343
+      targetPort: 60343
+      protocol: UDP
+      name: mosh-60343
+    
+    - port: 60344
+      targetPort: 60344
+      protocol: UDP
+      name: mosh-60344
+    
+    - port: 60345
+      targetPort: 60345
+      protocol: UDP
+      name: mosh-60345
+    
+    - port: 60346
+      targetPort: 60346
+      protocol: UDP
+      name: mosh-60346
+    
+    - port: 60347
+      targetPort: 60347
+      protocol: UDP
+      name: mosh-60347
+    
+    - port: 60348
+      targetPort: 60348
+      protocol: UDP
+      name: mosh-60348
+    
+    - port: 60349
+      targetPort: 60349
+      protocol: UDP
+      name: mosh-60349
+    
+    - port: 60350
+      targetPort: 60350
+      protocol: UDP
+      name: mosh-60350
+    
+    - port: 60351
+      targetPort: 60351
+      protocol: UDP
+      name: mosh-60351
+    
+    - port: 60352
+      targetPort: 60352
+      protocol: UDP
+      name: mosh-60352
+    
+    - port: 60353
+      targetPort: 60353
+      protocol: UDP
+      name: mosh-60353
+    
+    - port: 60354
+      targetPort: 60354
+      protocol: UDP
+      name: mosh-60354
+    
+    - port: 60355
+      targetPort: 60355
+      protocol: UDP
+      name: mosh-60355
+    
+    - port: 60356
+      targetPort: 60356
+      protocol: UDP
+      name: mosh-60356
+    
+    - port: 60357
+      targetPort: 60357
+      protocol: UDP
+      name: mosh-60357
+    
+    - port: 60358
+      targetPort: 60358
+      protocol: UDP
+      name: mosh-60358
+    
+    - port: 60359
+      targetPort: 60359
+      protocol: UDP
+      name: mosh-60359
+    
+    - port: 60360
+      targetPort: 60360
+      protocol: UDP
+      name: mosh-60360
+    
+    - port: 60361
+      targetPort: 60361
+      protocol: UDP
+      name: mosh-60361
+    
+    - port: 60362
+      targetPort: 60362
+      protocol: UDP
+      name: mosh-60362
+    
+    - port: 60363
+      targetPort: 60363
+      protocol: UDP
+      name: mosh-60363
+    
+    - port: 60364
+      targetPort: 60364
+      protocol: UDP
+      name: mosh-60364
+    
+    - port: 60365
+      targetPort: 60365
+      protocol: UDP
+      name: mosh-60365
+    
+    - port: 60366
+      targetPort: 60366
+      protocol: UDP
+      name: mosh-60366
+    
+    - port: 60367
+      targetPort: 60367
+      protocol: UDP
+      name: mosh-60367
+    
+    - port: 60368
+      targetPort: 60368
+      protocol: UDP
+      name: mosh-60368
+    
+    - port: 60369
+      targetPort: 60369
+      protocol: UDP
+      name: mosh-60369
+    
+    - port: 60370
+      targetPort: 60370
+      protocol: UDP
+      name: mosh-60370
+    
+    - port: 60371
+      targetPort: 60371
+      protocol: UDP
+      name: mosh-60371
+    
+    - port: 60372
+      targetPort: 60372
+      protocol: UDP
+      name: mosh-60372
+    
+    - port: 60373
+      targetPort: 60373
+      protocol: UDP
+      name: mosh-60373
+    
+    - port: 60374
+      targetPort: 60374
+      protocol: UDP
+      name: mosh-60374
+    
+    - port: 60375
+      targetPort: 60375
+      protocol: UDP
+      name: mosh-60375
+    
+    - port: 60376
+      targetPort: 60376
+      protocol: UDP
+      name: mosh-60376
+    
+    - port: 60377
+      targetPort: 60377
+      protocol: UDP
+      name: mosh-60377
+    
+    - port: 60378
+      targetPort: 60378
+      protocol: UDP
+      name: mosh-60378
+    
+    - port: 60379
+      targetPort: 60379
+      protocol: UDP
+      name: mosh-60379
+    
+    - port: 60380
+      targetPort: 60380
+      protocol: UDP
+      name: mosh-60380
+    
+    - port: 60381
+      targetPort: 60381
+      protocol: UDP
+      name: mosh-60381
+    
+    - port: 60382
+      targetPort: 60382
+      protocol: UDP
+      name: mosh-60382
+    
+    - port: 60383
+      targetPort: 60383
+      protocol: UDP
+      name: mosh-60383
+    
+    - port: 60384
+      targetPort: 60384
+      protocol: UDP
+      name: mosh-60384
+    
+    - port: 60385
+      targetPort: 60385
+      protocol: UDP
+      name: mosh-60385
+    
+    - port: 60386
+      targetPort: 60386
+      protocol: UDP
+      name: mosh-60386
+    
+    - port: 60387
+      targetPort: 60387
+      protocol: UDP
+      name: mosh-60387
+    
+    - port: 60388
+      targetPort: 60388
+      protocol: UDP
+      name: mosh-60388
+    
+    - port: 60389
+      targetPort: 60389
+      protocol: UDP
+      name: mosh-60389
+    
+    - port: 60390
+      targetPort: 60390
+      protocol: UDP
+      name: mosh-60390
+    
+    - port: 60391
+      targetPort: 60391
+      protocol: UDP
+      name: mosh-60391
+    
+    - port: 60392
+      targetPort: 60392
+      protocol: UDP
+      name: mosh-60392
+    
+    - port: 60393
+      targetPort: 60393
+      protocol: UDP
+      name: mosh-60393
+    
+    - port: 60394
+      targetPort: 60394
+      protocol: UDP
+      name: mosh-60394
+    
+    - port: 60395
+      targetPort: 60395
+      protocol: UDP
+      name: mosh-60395
+    
+    - port: 60396
+      targetPort: 60396
+      protocol: UDP
+      name: mosh-60396
+    
+    - port: 60397
+      targetPort: 60397
+      protocol: UDP
+      name: mosh-60397
+    
+    - port: 60398
+      targetPort: 60398
+      protocol: UDP
+      name: mosh-60398
+    
+    - port: 60399
+      targetPort: 60399
+      protocol: UDP
+      name: mosh-60399
+    
+    - port: 60400
+      targetPort: 60400
+      protocol: UDP
+      name: mosh-60400
+    
+    - port: 60401
+      targetPort: 60401
+      protocol: UDP
+      name: mosh-60401
+    
+    - port: 60402
+      targetPort: 60402
+      protocol: UDP
+      name: mosh-60402
+    
+    - port: 60403
+      targetPort: 60403
+      protocol: UDP
+      name: mosh-60403
+    
+    - port: 60404
+      targetPort: 60404
+      protocol: UDP
+      name: mosh-60404
+    
+    - port: 60405
+      targetPort: 60405
+      protocol: UDP
+      name: mosh-60405
+    
+    - port: 60406
+      targetPort: 60406
+      protocol: UDP
+      name: mosh-60406
+    
+    - port: 60407
+      targetPort: 60407
+      protocol: UDP
+      name: mosh-60407
+    
+    - port: 60408
+      targetPort: 60408
+      protocol: UDP
+      name: mosh-60408
+    
+    - port: 60409
+      targetPort: 60409
+      protocol: UDP
+      name: mosh-60409
+    
+    - port: 60410
+      targetPort: 60410
+      protocol: UDP
+      name: mosh-60410
+    
+    - port: 60411
+      targetPort: 60411
+      protocol: UDP
+      name: mosh-60411
+    
+    - port: 60412
+      targetPort: 60412
+      protocol: UDP
+      name: mosh-60412
+    
+    - port: 60413
+      targetPort: 60413
+      protocol: UDP
+      name: mosh-60413
+    
+    - port: 60414
+      targetPort: 60414
+      protocol: UDP
+      name: mosh-60414
+    
+    - port: 60415
+      targetPort: 60415
+      protocol: UDP
+      name: mosh-60415
+    
+    - port: 60416
+      targetPort: 60416
+      protocol: UDP
+      name: mosh-60416
+    
+    - port: 60417
+      targetPort: 60417
+      protocol: UDP
+      name: mosh-60417
+    
+    - port: 60418
+      targetPort: 60418
+      protocol: UDP
+      name: mosh-60418
+    
+    - port: 60419
+      targetPort: 60419
+      protocol: UDP
+      name: mosh-60419
+    
+    - port: 60420
+      targetPort: 60420
+      protocol: UDP
+      name: mosh-60420
+    
+    - port: 60421
+      targetPort: 60421
+      protocol: UDP
+      name: mosh-60421
+    
+    - port: 60422
+      targetPort: 60422
+      protocol: UDP
+      name: mosh-60422
+    
+    - port: 60423
+      targetPort: 60423
+      protocol: UDP
+      name: mosh-60423
+    
+    - port: 60424
+      targetPort: 60424
+      protocol: UDP
+      name: mosh-60424
+    
+    - port: 60425
+      targetPort: 60425
+      protocol: UDP
+      name: mosh-60425
+    
+    - port: 60426
+      targetPort: 60426
+      protocol: UDP
+      name: mosh-60426
+    
+    - port: 60427
+      targetPort: 60427
+      protocol: UDP
+      name: mosh-60427
+    
+    - port: 60428
+      targetPort: 60428
+      protocol: UDP
+      name: mosh-60428
+    
+    - port: 60429
+      targetPort: 60429
+      protocol: UDP
+      name: mosh-60429
+    
+    - port: 60430
+      targetPort: 60430
+      protocol: UDP
+      name: mosh-60430
+    
+    - port: 60431
+      targetPort: 60431
+      protocol: UDP
+      name: mosh-60431
+    
+    - port: 60432
+      targetPort: 60432
+      protocol: UDP
+      name: mosh-60432
+    
+    - port: 60433
+      targetPort: 60433
+      protocol: UDP
+      name: mosh-60433
+    
+    - port: 60434
+      targetPort: 60434
+      protocol: UDP
+      name: mosh-60434
+    
+    - port: 60435
+      targetPort: 60435
+      protocol: UDP
+      name: mosh-60435
+    
+    - port: 60436
+      targetPort: 60436
+      protocol: UDP
+      name: mosh-60436
+    
+    - port: 60437
+      targetPort: 60437
+      protocol: UDP
+      name: mosh-60437
+    
+    - port: 60438
+      targetPort: 60438
+      protocol: UDP
+      name: mosh-60438
+    
+    - port: 60439
+      targetPort: 60439
+      protocol: UDP
+      name: mosh-60439
+    
+    - port: 60440
+      targetPort: 60440
+      protocol: UDP
+      name: mosh-60440
+    
+    - port: 60441
+      targetPort: 60441
+      protocol: UDP
+      name: mosh-60441
+    
+    - port: 60442
+      targetPort: 60442
+      protocol: UDP
+      name: mosh-60442
+    
+    - port: 60443
+      targetPort: 60443
+      protocol: UDP
+      name: mosh-60443
+    
+    - port: 60444
+      targetPort: 60444
+      protocol: UDP
+      name: mosh-60444
+    
+    - port: 60445
+      targetPort: 60445
+      protocol: UDP
+      name: mosh-60445
+    
+    - port: 60446
+      targetPort: 60446
+      protocol: UDP
+      name: mosh-60446
+    
+    - port: 60447
+      targetPort: 60447
+      protocol: UDP
+      name: mosh-60447
+    
+    - port: 60448
+      targetPort: 60448
+      protocol: UDP
+      name: mosh-60448
+    
+    - port: 60449
+      targetPort: 60449
+      protocol: UDP
+      name: mosh-60449
+    
+    - port: 60450
+      targetPort: 60450
+      protocol: UDP
+      name: mosh-60450
+    
+    - port: 60451
+      targetPort: 60451
+      protocol: UDP
+      name: mosh-60451
+    
+    - port: 60452
+      targetPort: 60452
+      protocol: UDP
+      name: mosh-60452
+    
+    - port: 60453
+      targetPort: 60453
+      protocol: UDP
+      name: mosh-60453
+    
+    - port: 60454
+      targetPort: 60454
+      protocol: UDP
+      name: mosh-60454
+    
+    - port: 60455
+      targetPort: 60455
+      protocol: UDP
+      name: mosh-60455
+    
+    - port: 60456
+      targetPort: 60456
+      protocol: UDP
+      name: mosh-60456
+    
+    - port: 60457
+      targetPort: 60457
+      protocol: UDP
+      name: mosh-60457
+    
+    - port: 60458
+      targetPort: 60458
+      protocol: UDP
+      name: mosh-60458
+    
+    - port: 60459
+      targetPort: 60459
+      protocol: UDP
+      name: mosh-60459
+    
+    - port: 60460
+      targetPort: 60460
+      protocol: UDP
+      name: mosh-60460
+    
+    - port: 60461
+      targetPort: 60461
+      protocol: UDP
+      name: mosh-60461
+    
+    - port: 60462
+      targetPort: 60462
+      protocol: UDP
+      name: mosh-60462
+    
+    - port: 60463
+      targetPort: 60463
+      protocol: UDP
+      name: mosh-60463
+    
+    - port: 60464
+      targetPort: 60464
+      protocol: UDP
+      name: mosh-60464
+    
+    - port: 60465
+      targetPort: 60465
+      protocol: UDP
+      name: mosh-60465
+    
+    - port: 60466
+      targetPort: 60466
+      protocol: UDP
+      name: mosh-60466
+    
+    - port: 60467
+      targetPort: 60467
+      protocol: UDP
+      name: mosh-60467
+    
+    - port: 60468
+      targetPort: 60468
+      protocol: UDP
+      name: mosh-60468
+    
+    - port: 60469
+      targetPort: 60469
+      protocol: UDP
+      name: mosh-60469
+    
+    - port: 60470
+      targetPort: 60470
+      protocol: UDP
+      name: mosh-60470
+    
+    - port: 60471
+      targetPort: 60471
+      protocol: UDP
+      name: mosh-60471
+    
+    - port: 60472
+      targetPort: 60472
+      protocol: UDP
+      name: mosh-60472
+    
+    - port: 60473
+      targetPort: 60473
+      protocol: UDP
+      name: mosh-60473
+    
+    - port: 60474
+      targetPort: 60474
+      protocol: UDP
+      name: mosh-60474
+    
+    - port: 60475
+      targetPort: 60475
+      protocol: UDP
+      name: mosh-60475
+    
+    - port: 60476
+      targetPort: 60476
+      protocol: UDP
+      name: mosh-60476
+    
+    - port: 60477
+      targetPort: 60477
+      protocol: UDP
+      name: mosh-60477
+    
+    - port: 60478
+      targetPort: 60478
+      protocol: UDP
+      name: mosh-60478
+    
+    - port: 60479
+      targetPort: 60479
+      protocol: UDP
+      name: mosh-60479
+    
+    - port: 60480
+      targetPort: 60480
+      protocol: UDP
+      name: mosh-60480
+    
+    - port: 60481
+      targetPort: 60481
+      protocol: UDP
+      name: mosh-60481
+    
+    - port: 60482
+      targetPort: 60482
+      protocol: UDP
+      name: mosh-60482
+    
+    - port: 60483
+      targetPort: 60483
+      protocol: UDP
+      name: mosh-60483
+    
+    - port: 60484
+      targetPort: 60484
+      protocol: UDP
+      name: mosh-60484
+    
+    - port: 60485
+      targetPort: 60485
+      protocol: UDP
+      name: mosh-60485
+    
+    - port: 60486
+      targetPort: 60486
+      protocol: UDP
+      name: mosh-60486
+    
+    - port: 60487
+      targetPort: 60487
+      protocol: UDP
+      name: mosh-60487
+    
+    - port: 60488
+      targetPort: 60488
+      protocol: UDP
+      name: mosh-60488
+    
+    - port: 60489
+      targetPort: 60489
+      protocol: UDP
+      name: mosh-60489
+    
+    - port: 60490
+      targetPort: 60490
+      protocol: UDP
+      name: mosh-60490
+    
+    - port: 60491
+      targetPort: 60491
+      protocol: UDP
+      name: mosh-60491
+    
+    - port: 60492
+      targetPort: 60492
+      protocol: UDP
+      name: mosh-60492
+    
+    - port: 60493
+      targetPort: 60493
+      protocol: UDP
+      name: mosh-60493
+    
+    - port: 60494
+      targetPort: 60494
+      protocol: UDP
+      name: mosh-60494
+    
+    - port: 60495
+      targetPort: 60495
+      protocol: UDP
+      name: mosh-60495
+    
+    - port: 60496
+      targetPort: 60496
+      protocol: UDP
+      name: mosh-60496
+    
+    - port: 60497
+      targetPort: 60497
+      protocol: UDP
+      name: mosh-60497
+    
+    - port: 60498
+      targetPort: 60498
+      protocol: UDP
+      name: mosh-60498
+    
+    - port: 60499
+      targetPort: 60499
+      protocol: UDP
+      name: mosh-60499
+    
+    - port: 60500
+      targetPort: 60500
+      protocol: UDP
+      name: mosh-60500
+    
+    - port: 60501
+      targetPort: 60501
+      protocol: UDP
+      name: mosh-60501
+    
+    - port: 60502
+      targetPort: 60502
+      protocol: UDP
+      name: mosh-60502
+    
+    - port: 60503
+      targetPort: 60503
+      protocol: UDP
+      name: mosh-60503
+    
+    - port: 60504
+      targetPort: 60504
+      protocol: UDP
+      name: mosh-60504
+    
+    - port: 60505
+      targetPort: 60505
+      protocol: UDP
+      name: mosh-60505
+    
+    - port: 60506
+      targetPort: 60506
+      protocol: UDP
+      name: mosh-60506
+    
+    - port: 60507
+      targetPort: 60507
+      protocol: UDP
+      name: mosh-60507
+    
+    - port: 60508
+      targetPort: 60508
+      protocol: UDP
+      name: mosh-60508
+    
+    - port: 60509
+      targetPort: 60509
+      protocol: UDP
+      name: mosh-60509
+    
+    - port: 60510
+      targetPort: 60510
+      protocol: UDP
+      name: mosh-60510
+    
+    - port: 60511
+      targetPort: 60511
+      protocol: UDP
+      name: mosh-60511
+    
+    - port: 60512
+      targetPort: 60512
+      protocol: UDP
+      name: mosh-60512
+    
+    - port: 60513
+      targetPort: 60513
+      protocol: UDP
+      name: mosh-60513
+    
+    - port: 60514
+      targetPort: 60514
+      protocol: UDP
+      name: mosh-60514
+    
+    - port: 60515
+      targetPort: 60515
+      protocol: UDP
+      name: mosh-60515
+    
+    - port: 60516
+      targetPort: 60516
+      protocol: UDP
+      name: mosh-60516
+    
+    - port: 60517
+      targetPort: 60517
+      protocol: UDP
+      name: mosh-60517
+    
+    - port: 60518
+      targetPort: 60518
+      protocol: UDP
+      name: mosh-60518
+    
+    - port: 60519
+      targetPort: 60519
+      protocol: UDP
+      name: mosh-60519
+    
+    - port: 60520
+      targetPort: 60520
+      protocol: UDP
+      name: mosh-60520
+    
+    - port: 60521
+      targetPort: 60521
+      protocol: UDP
+      name: mosh-60521
+    
+    - port: 60522
+      targetPort: 60522
+      protocol: UDP
+      name: mosh-60522
+    
+    - port: 60523
+      targetPort: 60523
+      protocol: UDP
+      name: mosh-60523
+    
+    - port: 60524
+      targetPort: 60524
+      protocol: UDP
+      name: mosh-60524
+    
+    - port: 60525
+      targetPort: 60525
+      protocol: UDP
+      name: mosh-60525
+    
+    - port: 60526
+      targetPort: 60526
+      protocol: UDP
+      name: mosh-60526
+    
+    - port: 60527
+      targetPort: 60527
+      protocol: UDP
+      name: mosh-60527
+    
+    - port: 60528
+      targetPort: 60528
+      protocol: UDP
+      name: mosh-60528
+    
+    - port: 60529
+      targetPort: 60529
+      protocol: UDP
+      name: mosh-60529
+    
+    - port: 60530
+      targetPort: 60530
+      protocol: UDP
+      name: mosh-60530
+    
+    - port: 60531
+      targetPort: 60531
+      protocol: UDP
+      name: mosh-60531
+    
+    - port: 60532
+      targetPort: 60532
+      protocol: UDP
+      name: mosh-60532
+    
+    - port: 60533
+      targetPort: 60533
+      protocol: UDP
+      name: mosh-60533
+    
+    - port: 60534
+      targetPort: 60534
+      protocol: UDP
+      name: mosh-60534
+    
+    - port: 60535
+      targetPort: 60535
+      protocol: UDP
+      name: mosh-60535
+    
+    - port: 60536
+      targetPort: 60536
+      protocol: UDP
+      name: mosh-60536
+    
+    - port: 60537
+      targetPort: 60537
+      protocol: UDP
+      name: mosh-60537
+    
+    - port: 60538
+      targetPort: 60538
+      protocol: UDP
+      name: mosh-60538
+    
+    - port: 60539
+      targetPort: 60539
+      protocol: UDP
+      name: mosh-60539
+    
+    - port: 60540
+      targetPort: 60540
+      protocol: UDP
+      name: mosh-60540
+    
+    - port: 60541
+      targetPort: 60541
+      protocol: UDP
+      name: mosh-60541
+    
+    - port: 60542
+      targetPort: 60542
+      protocol: UDP
+      name: mosh-60542
+    
+    - port: 60543
+      targetPort: 60543
+      protocol: UDP
+      name: mosh-60543
+    
+    - port: 60544
+      targetPort: 60544
+      protocol: UDP
+      name: mosh-60544
+    
+    - port: 60545
+      targetPort: 60545
+      protocol: UDP
+      name: mosh-60545
+    
+    - port: 60546
+      targetPort: 60546
+      protocol: UDP
+      name: mosh-60546
+    
+    - port: 60547
+      targetPort: 60547
+      protocol: UDP
+      name: mosh-60547
+    
+    - port: 60548
+      targetPort: 60548
+      protocol: UDP
+      name: mosh-60548
+    
+    - port: 60549
+      targetPort: 60549
+      protocol: UDP
+      name: mosh-60549
+    
+    - port: 60550
+      targetPort: 60550
+      protocol: UDP
+      name: mosh-60550
+    
+    - port: 60551
+      targetPort: 60551
+      protocol: UDP
+      name: mosh-60551
+    
+    - port: 60552
+      targetPort: 60552
+      protocol: UDP
+      name: mosh-60552
+    
+    - port: 60553
+      targetPort: 60553
+      protocol: UDP
+      name: mosh-60553
+    
+    - port: 60554
+      targetPort: 60554
+      protocol: UDP
+      name: mosh-60554
+    
+    - port: 60555
+      targetPort: 60555
+      protocol: UDP
+      name: mosh-60555
+    
+    - port: 60556
+      targetPort: 60556
+      protocol: UDP
+      name: mosh-60556
+    
+    - port: 60557
+      targetPort: 60557
+      protocol: UDP
+      name: mosh-60557
+    
+    - port: 60558
+      targetPort: 60558
+      protocol: UDP
+      name: mosh-60558
+    
+    - port: 60559
+      targetPort: 60559
+      protocol: UDP
+      name: mosh-60559
+    
+    - port: 60560
+      targetPort: 60560
+      protocol: UDP
+      name: mosh-60560
+    
+    - port: 60561
+      targetPort: 60561
+      protocol: UDP
+      name: mosh-60561
+    
+    - port: 60562
+      targetPort: 60562
+      protocol: UDP
+      name: mosh-60562
+    
+    - port: 60563
+      targetPort: 60563
+      protocol: UDP
+      name: mosh-60563
+    
+    - port: 60564
+      targetPort: 60564
+      protocol: UDP
+      name: mosh-60564
+    
+    - port: 60565
+      targetPort: 60565
+      protocol: UDP
+      name: mosh-60565
+    
+    - port: 60566
+      targetPort: 60566
+      protocol: UDP
+      name: mosh-60566
+    
+    - port: 60567
+      targetPort: 60567
+      protocol: UDP
+      name: mosh-60567
+    
+    - port: 60568
+      targetPort: 60568
+      protocol: UDP
+      name: mosh-60568
+    
+    - port: 60569
+      targetPort: 60569
+      protocol: UDP
+      name: mosh-60569
+    
+    - port: 60570
+      targetPort: 60570
+      protocol: UDP
+      name: mosh-60570
+    
+    - port: 60571
+      targetPort: 60571
+      protocol: UDP
+      name: mosh-60571
+    
+    - port: 60572
+      targetPort: 60572
+      protocol: UDP
+      name: mosh-60572
+    
+    - port: 60573
+      targetPort: 60573
+      protocol: UDP
+      name: mosh-60573
+    
+    - port: 60574
+      targetPort: 60574
+      protocol: UDP
+      name: mosh-60574
+    
+    - port: 60575
+      targetPort: 60575
+      protocol: UDP
+      name: mosh-60575
+    
+    - port: 60576
+      targetPort: 60576
+      protocol: UDP
+      name: mosh-60576
+    
+    - port: 60577
+      targetPort: 60577
+      protocol: UDP
+      name: mosh-60577
+    
+    - port: 60578
+      targetPort: 60578
+      protocol: UDP
+      name: mosh-60578
+    
+    - port: 60579
+      targetPort: 60579
+      protocol: UDP
+      name: mosh-60579
+    
+    - port: 60580
+      targetPort: 60580
+      protocol: UDP
+      name: mosh-60580
+    
+    - port: 60581
+      targetPort: 60581
+      protocol: UDP
+      name: mosh-60581
+    
+    - port: 60582
+      targetPort: 60582
+      protocol: UDP
+      name: mosh-60582
+    
+    - port: 60583
+      targetPort: 60583
+      protocol: UDP
+      name: mosh-60583
+    
+    - port: 60584
+      targetPort: 60584
+      protocol: UDP
+      name: mosh-60584
+    
+    - port: 60585
+      targetPort: 60585
+      protocol: UDP
+      name: mosh-60585
+    
+    - port: 60586
+      targetPort: 60586
+      protocol: UDP
+      name: mosh-60586
+    
+    - port: 60587
+      targetPort: 60587
+      protocol: UDP
+      name: mosh-60587
+    
+    - port: 60588
+      targetPort: 60588
+      protocol: UDP
+      name: mosh-60588
+    
+    - port: 60589
+      targetPort: 60589
+      protocol: UDP
+      name: mosh-60589
+    
+    - port: 60590
+      targetPort: 60590
+      protocol: UDP
+      name: mosh-60590
+    
+    - port: 60591
+      targetPort: 60591
+      protocol: UDP
+      name: mosh-60591
+    
+    - port: 60592
+      targetPort: 60592
+      protocol: UDP
+      name: mosh-60592
+    
+    - port: 60593
+      targetPort: 60593
+      protocol: UDP
+      name: mosh-60593
+    
+    - port: 60594
+      targetPort: 60594
+      protocol: UDP
+      name: mosh-60594
+    
+    - port: 60595
+      targetPort: 60595
+      protocol: UDP
+      name: mosh-60595
+    
+    - port: 60596
+      targetPort: 60596
+      protocol: UDP
+      name: mosh-60596
+    
+    - port: 60597
+      targetPort: 60597
+      protocol: UDP
+      name: mosh-60597
+    
+    - port: 60598
+      targetPort: 60598
+      protocol: UDP
+      name: mosh-60598
+    
+    - port: 60599
+      targetPort: 60599
+      protocol: UDP
+      name: mosh-60599
+    
+    - port: 60600
+      targetPort: 60600
+      protocol: UDP
+      name: mosh-60600
+    
+    - port: 60601
+      targetPort: 60601
+      protocol: UDP
+      name: mosh-60601
+    
+    - port: 60602
+      targetPort: 60602
+      protocol: UDP
+      name: mosh-60602
+    
+    - port: 60603
+      targetPort: 60603
+      protocol: UDP
+      name: mosh-60603
+    
+    - port: 60604
+      targetPort: 60604
+      protocol: UDP
+      name: mosh-60604
+    
+    - port: 60605
+      targetPort: 60605
+      protocol: UDP
+      name: mosh-60605
+    
+    - port: 60606
+      targetPort: 60606
+      protocol: UDP
+      name: mosh-60606
+    
+    - port: 60607
+      targetPort: 60607
+      protocol: UDP
+      name: mosh-60607
+    
+    - port: 60608
+      targetPort: 60608
+      protocol: UDP
+      name: mosh-60608
+    
+    - port: 60609
+      targetPort: 60609
+      protocol: UDP
+      name: mosh-60609
+    
+    - port: 60610
+      targetPort: 60610
+      protocol: UDP
+      name: mosh-60610
+    
+    - port: 60611
+      targetPort: 60611
+      protocol: UDP
+      name: mosh-60611
+    
+    - port: 60612
+      targetPort: 60612
+      protocol: UDP
+      name: mosh-60612
+    
+    - port: 60613
+      targetPort: 60613
+      protocol: UDP
+      name: mosh-60613
+    
+    - port: 60614
+      targetPort: 60614
+      protocol: UDP
+      name: mosh-60614
+    
+    - port: 60615
+      targetPort: 60615
+      protocol: UDP
+      name: mosh-60615
+    
+    - port: 60616
+      targetPort: 60616
+      protocol: UDP
+      name: mosh-60616
+    
+    - port: 60617
+      targetPort: 60617
+      protocol: UDP
+      name: mosh-60617
+    
+    - port: 60618
+      targetPort: 60618
+      protocol: UDP
+      name: mosh-60618
+    
+    - port: 60619
+      targetPort: 60619
+      protocol: UDP
+      name: mosh-60619
+    
+    - port: 60620
+      targetPort: 60620
+      protocol: UDP
+      name: mosh-60620
+    
+    - port: 60621
+      targetPort: 60621
+      protocol: UDP
+      name: mosh-60621
+    
+    - port: 60622
+      targetPort: 60622
+      protocol: UDP
+      name: mosh-60622
+    
+    - port: 60623
+      targetPort: 60623
+      protocol: UDP
+      name: mosh-60623
+    
+    - port: 60624
+      targetPort: 60624
+      protocol: UDP
+      name: mosh-60624
+    
+    - port: 60625
+      targetPort: 60625
+      protocol: UDP
+      name: mosh-60625
+    
+    - port: 60626
+      targetPort: 60626
+      protocol: UDP
+      name: mosh-60626
+    
+    - port: 60627
+      targetPort: 60627
+      protocol: UDP
+      name: mosh-60627
+    
+    - port: 60628
+      targetPort: 60628
+      protocol: UDP
+      name: mosh-60628
+    
+    - port: 60629
+      targetPort: 60629
+      protocol: UDP
+      name: mosh-60629
+    
+    - port: 60630
+      targetPort: 60630
+      protocol: UDP
+      name: mosh-60630
+    
+    - port: 60631
+      targetPort: 60631
+      protocol: UDP
+      name: mosh-60631
+    
+    - port: 60632
+      targetPort: 60632
+      protocol: UDP
+      name: mosh-60632
+    
+    - port: 60633
+      targetPort: 60633
+      protocol: UDP
+      name: mosh-60633
+    
+    - port: 60634
+      targetPort: 60634
+      protocol: UDP
+      name: mosh-60634
+    
+    - port: 60635
+      targetPort: 60635
+      protocol: UDP
+      name: mosh-60635
+    
+    - port: 60636
+      targetPort: 60636
+      protocol: UDP
+      name: mosh-60636
+    
+    - port: 60637
+      targetPort: 60637
+      protocol: UDP
+      name: mosh-60637
+    
+    - port: 60638
+      targetPort: 60638
+      protocol: UDP
+      name: mosh-60638
+    
+    - port: 60639
+      targetPort: 60639
+      protocol: UDP
+      name: mosh-60639
+    
+    - port: 60640
+      targetPort: 60640
+      protocol: UDP
+      name: mosh-60640
+    
+    - port: 60641
+      targetPort: 60641
+      protocol: UDP
+      name: mosh-60641
+    
+    - port: 60642
+      targetPort: 60642
+      protocol: UDP
+      name: mosh-60642
+    
+    - port: 60643
+      targetPort: 60643
+      protocol: UDP
+      name: mosh-60643
+    
+    - port: 60644
+      targetPort: 60644
+      protocol: UDP
+      name: mosh-60644
+    
+    - port: 60645
+      targetPort: 60645
+      protocol: UDP
+      name: mosh-60645
+    
+    - port: 60646
+      targetPort: 60646
+      protocol: UDP
+      name: mosh-60646
+    
+    - port: 60647
+      targetPort: 60647
+      protocol: UDP
+      name: mosh-60647
+    
+    - port: 60648
+      targetPort: 60648
+      protocol: UDP
+      name: mosh-60648
+    
+    - port: 60649
+      targetPort: 60649
+      protocol: UDP
+      name: mosh-60649
+    
+    - port: 60650
+      targetPort: 60650
+      protocol: UDP
+      name: mosh-60650
+    
+    - port: 60651
+      targetPort: 60651
+      protocol: UDP
+      name: mosh-60651
+    
+    - port: 60652
+      targetPort: 60652
+      protocol: UDP
+      name: mosh-60652
+    
+    - port: 60653
+      targetPort: 60653
+      protocol: UDP
+      name: mosh-60653
+    
+    - port: 60654
+      targetPort: 60654
+      protocol: UDP
+      name: mosh-60654
+    
+    - port: 60655
+      targetPort: 60655
+      protocol: UDP
+      name: mosh-60655
+    
+    - port: 60656
+      targetPort: 60656
+      protocol: UDP
+      name: mosh-60656
+    
+    - port: 60657
+      targetPort: 60657
+      protocol: UDP
+      name: mosh-60657
+    
+    - port: 60658
+      targetPort: 60658
+      protocol: UDP
+      name: mosh-60658
+    
+    - port: 60659
+      targetPort: 60659
+      protocol: UDP
+      name: mosh-60659
+    
+    - port: 60660
+      targetPort: 60660
+      protocol: UDP
+      name: mosh-60660
+    
+    - port: 60661
+      targetPort: 60661
+      protocol: UDP
+      name: mosh-60661
+    
+    - port: 60662
+      targetPort: 60662
+      protocol: UDP
+      name: mosh-60662
+    
+    - port: 60663
+      targetPort: 60663
+      protocol: UDP
+      name: mosh-60663
+    
+    - port: 60664
+      targetPort: 60664
+      protocol: UDP
+      name: mosh-60664
+    
+    - port: 60665
+      targetPort: 60665
+      protocol: UDP
+      name: mosh-60665
+    
+    - port: 60666
+      targetPort: 60666
+      protocol: UDP
+      name: mosh-60666
+    
+    - port: 60667
+      targetPort: 60667
+      protocol: UDP
+      name: mosh-60667
+    
+    - port: 60668
+      targetPort: 60668
+      protocol: UDP
+      name: mosh-60668
+    
+    - port: 60669
+      targetPort: 60669
+      protocol: UDP
+      name: mosh-60669
+    
+    - port: 60670
+      targetPort: 60670
+      protocol: UDP
+      name: mosh-60670
+    
+    - port: 60671
+      targetPort: 60671
+      protocol: UDP
+      name: mosh-60671
+    
+    - port: 60672
+      targetPort: 60672
+      protocol: UDP
+      name: mosh-60672
+    
+    - port: 60673
+      targetPort: 60673
+      protocol: UDP
+      name: mosh-60673
+    
+    - port: 60674
+      targetPort: 60674
+      protocol: UDP
+      name: mosh-60674
+    
+    - port: 60675
+      targetPort: 60675
+      protocol: UDP
+      name: mosh-60675
+    
+    - port: 60676
+      targetPort: 60676
+      protocol: UDP
+      name: mosh-60676
+    
+    - port: 60677
+      targetPort: 60677
+      protocol: UDP
+      name: mosh-60677
+    
+    - port: 60678
+      targetPort: 60678
+      protocol: UDP
+      name: mosh-60678
+    
+    - port: 60679
+      targetPort: 60679
+      protocol: UDP
+      name: mosh-60679
+    
+    - port: 60680
+      targetPort: 60680
+      protocol: UDP
+      name: mosh-60680
+    
+    - port: 60681
+      targetPort: 60681
+      protocol: UDP
+      name: mosh-60681
+    
+    - port: 60682
+      targetPort: 60682
+      protocol: UDP
+      name: mosh-60682
+    
+    - port: 60683
+      targetPort: 60683
+      protocol: UDP
+      name: mosh-60683
+    
+    - port: 60684
+      targetPort: 60684
+      protocol: UDP
+      name: mosh-60684
+    
+    - port: 60685
+      targetPort: 60685
+      protocol: UDP
+      name: mosh-60685
+    
+    - port: 60686
+      targetPort: 60686
+      protocol: UDP
+      name: mosh-60686
+    
+    - port: 60687
+      targetPort: 60687
+      protocol: UDP
+      name: mosh-60687
+    
+    - port: 60688
+      targetPort: 60688
+      protocol: UDP
+      name: mosh-60688
+    
+    - port: 60689
+      targetPort: 60689
+      protocol: UDP
+      name: mosh-60689
+    
+    - port: 60690
+      targetPort: 60690
+      protocol: UDP
+      name: mosh-60690
+    
+    - port: 60691
+      targetPort: 60691
+      protocol: UDP
+      name: mosh-60691
+    
+    - port: 60692
+      targetPort: 60692
+      protocol: UDP
+      name: mosh-60692
+    
+    - port: 60693
+      targetPort: 60693
+      protocol: UDP
+      name: mosh-60693
+    
+    - port: 60694
+      targetPort: 60694
+      protocol: UDP
+      name: mosh-60694
+    
+    - port: 60695
+      targetPort: 60695
+      protocol: UDP
+      name: mosh-60695
+    
+    - port: 60696
+      targetPort: 60696
+      protocol: UDP
+      name: mosh-60696
+    
+    - port: 60697
+      targetPort: 60697
+      protocol: UDP
+      name: mosh-60697
+    
+    - port: 60698
+      targetPort: 60698
+      protocol: UDP
+      name: mosh-60698
+    
+    - port: 60699
+      targetPort: 60699
+      protocol: UDP
+      name: mosh-60699
+    
+    - port: 60700
+      targetPort: 60700
+      protocol: UDP
+      name: mosh-60700
+    
+    - port: 60701
+      targetPort: 60701
+      protocol: UDP
+      name: mosh-60701
+    
+    - port: 60702
+      targetPort: 60702
+      protocol: UDP
+      name: mosh-60702
+    
+    - port: 60703
+      targetPort: 60703
+      protocol: UDP
+      name: mosh-60703
+    
+    - port: 60704
+      targetPort: 60704
+      protocol: UDP
+      name: mosh-60704
+    
+    - port: 60705
+      targetPort: 60705
+      protocol: UDP
+      name: mosh-60705
+    
+    - port: 60706
+      targetPort: 60706
+      protocol: UDP
+      name: mosh-60706
+    
+    - port: 60707
+      targetPort: 60707
+      protocol: UDP
+      name: mosh-60707
+    
+    - port: 60708
+      targetPort: 60708
+      protocol: UDP
+      name: mosh-60708
+    
+    - port: 60709
+      targetPort: 60709
+      protocol: UDP
+      name: mosh-60709
+    
+    - port: 60710
+      targetPort: 60710
+      protocol: UDP
+      name: mosh-60710
+    
+    - port: 60711
+      targetPort: 60711
+      protocol: UDP
+      name: mosh-60711
+    
+    - port: 60712
+      targetPort: 60712
+      protocol: UDP
+      name: mosh-60712
+    
+    - port: 60713
+      targetPort: 60713
+      protocol: UDP
+      name: mosh-60713
+    
+    - port: 60714
+      targetPort: 60714
+      protocol: UDP
+      name: mosh-60714
+    
+    - port: 60715
+      targetPort: 60715
+      protocol: UDP
+      name: mosh-60715
+    
+    - port: 60716
+      targetPort: 60716
+      protocol: UDP
+      name: mosh-60716
+    
+    - port: 60717
+      targetPort: 60717
+      protocol: UDP
+      name: mosh-60717
+    
+    - port: 60718
+      targetPort: 60718
+      protocol: UDP
+      name: mosh-60718
+    
+    - port: 60719
+      targetPort: 60719
+      protocol: UDP
+      name: mosh-60719
+    
+    - port: 60720
+      targetPort: 60720
+      protocol: UDP
+      name: mosh-60720
+    
+    - port: 60721
+      targetPort: 60721
+      protocol: UDP
+      name: mosh-60721
+    
+    - port: 60722
+      targetPort: 60722
+      protocol: UDP
+      name: mosh-60722
+    
+    - port: 60723
+      targetPort: 60723
+      protocol: UDP
+      name: mosh-60723
+    
+    - port: 60724
+      targetPort: 60724
+      protocol: UDP
+      name: mosh-60724
+    
+    - port: 60725
+      targetPort: 60725
+      protocol: UDP
+      name: mosh-60725
+    
+    - port: 60726
+      targetPort: 60726
+      protocol: UDP
+      name: mosh-60726
+    
+    - port: 60727
+      targetPort: 60727
+      protocol: UDP
+      name: mosh-60727
+    
+    - port: 60728
+      targetPort: 60728
+      protocol: UDP
+      name: mosh-60728
+    
+    - port: 60729
+      targetPort: 60729
+      protocol: UDP
+      name: mosh-60729
+    
+    - port: 60730
+      targetPort: 60730
+      protocol: UDP
+      name: mosh-60730
+    
+    - port: 60731
+      targetPort: 60731
+      protocol: UDP
+      name: mosh-60731
+    
+    - port: 60732
+      targetPort: 60732
+      protocol: UDP
+      name: mosh-60732
+    
+    - port: 60733
+      targetPort: 60733
+      protocol: UDP
+      name: mosh-60733
+    
+    - port: 60734
+      targetPort: 60734
+      protocol: UDP
+      name: mosh-60734
+    
+    - port: 60735
+      targetPort: 60735
+      protocol: UDP
+      name: mosh-60735
+    
+    - port: 60736
+      targetPort: 60736
+      protocol: UDP
+      name: mosh-60736
+    
+    - port: 60737
+      targetPort: 60737
+      protocol: UDP
+      name: mosh-60737
+    
+    - port: 60738
+      targetPort: 60738
+      protocol: UDP
+      name: mosh-60738
+    
+    - port: 60739
+      targetPort: 60739
+      protocol: UDP
+      name: mosh-60739
+    
+    - port: 60740
+      targetPort: 60740
+      protocol: UDP
+      name: mosh-60740
+    
+    - port: 60741
+      targetPort: 60741
+      protocol: UDP
+      name: mosh-60741
+    
+    - port: 60742
+      targetPort: 60742
+      protocol: UDP
+      name: mosh-60742
+    
+    - port: 60743
+      targetPort: 60743
+      protocol: UDP
+      name: mosh-60743
+    
+    - port: 60744
+      targetPort: 60744
+      protocol: UDP
+      name: mosh-60744
+    
+    - port: 60745
+      targetPort: 60745
+      protocol: UDP
+      name: mosh-60745
+    
+    - port: 60746
+      targetPort: 60746
+      protocol: UDP
+      name: mosh-60746
+    
+    - port: 60747
+      targetPort: 60747
+      protocol: UDP
+      name: mosh-60747
+    
+    - port: 60748
+      targetPort: 60748
+      protocol: UDP
+      name: mosh-60748
+    
+    - port: 60749
+      targetPort: 60749
+      protocol: UDP
+      name: mosh-60749
+    
+    - port: 60750
+      targetPort: 60750
+      protocol: UDP
+      name: mosh-60750
+    
+    - port: 60751
+      targetPort: 60751
+      protocol: UDP
+      name: mosh-60751
+    
+    - port: 60752
+      targetPort: 60752
+      protocol: UDP
+      name: mosh-60752
+    
+    - port: 60753
+      targetPort: 60753
+      protocol: UDP
+      name: mosh-60753
+    
+    - port: 60754
+      targetPort: 60754
+      protocol: UDP
+      name: mosh-60754
+    
+    - port: 60755
+      targetPort: 60755
+      protocol: UDP
+      name: mosh-60755
+    
+    - port: 60756
+      targetPort: 60756
+      protocol: UDP
+      name: mosh-60756
+    
+    - port: 60757
+      targetPort: 60757
+      protocol: UDP
+      name: mosh-60757
+    
+    - port: 60758
+      targetPort: 60758
+      protocol: UDP
+      name: mosh-60758
+    
+    - port: 60759
+      targetPort: 60759
+      protocol: UDP
+      name: mosh-60759
+    
+    - port: 60760
+      targetPort: 60760
+      protocol: UDP
+      name: mosh-60760
+    
+    - port: 60761
+      targetPort: 60761
+      protocol: UDP
+      name: mosh-60761
+    
+    - port: 60762
+      targetPort: 60762
+      protocol: UDP
+      name: mosh-60762
+    
+    - port: 60763
+      targetPort: 60763
+      protocol: UDP
+      name: mosh-60763
+    
+    - port: 60764
+      targetPort: 60764
+      protocol: UDP
+      name: mosh-60764
+    
+    - port: 60765
+      targetPort: 60765
+      protocol: UDP
+      name: mosh-60765
+    
+    - port: 60766
+      targetPort: 60766
+      protocol: UDP
+      name: mosh-60766
+    
+    - port: 60767
+      targetPort: 60767
+      protocol: UDP
+      name: mosh-60767
+    
+    - port: 60768
+      targetPort: 60768
+      protocol: UDP
+      name: mosh-60768
+    
+    - port: 60769
+      targetPort: 60769
+      protocol: UDP
+      name: mosh-60769
+    
+    - port: 60770
+      targetPort: 60770
+      protocol: UDP
+      name: mosh-60770
+    
+    - port: 60771
+      targetPort: 60771
+      protocol: UDP
+      name: mosh-60771
+    
+    - port: 60772
+      targetPort: 60772
+      protocol: UDP
+      name: mosh-60772
+    
+    - port: 60773
+      targetPort: 60773
+      protocol: UDP
+      name: mosh-60773
+    
+    - port: 60774
+      targetPort: 60774
+      protocol: UDP
+      name: mosh-60774
+    
+    - port: 60775
+      targetPort: 60775
+      protocol: UDP
+      name: mosh-60775
+    
+    - port: 60776
+      targetPort: 60776
+      protocol: UDP
+      name: mosh-60776
+    
+    - port: 60777
+      targetPort: 60777
+      protocol: UDP
+      name: mosh-60777
+    
+    - port: 60778
+      targetPort: 60778
+      protocol: UDP
+      name: mosh-60778
+    
+    - port: 60779
+      targetPort: 60779
+      protocol: UDP
+      name: mosh-60779
+    
+    - port: 60780
+      targetPort: 60780
+      protocol: UDP
+      name: mosh-60780
+    
+    - port: 60781
+      targetPort: 60781
+      protocol: UDP
+      name: mosh-60781
+    
+    - port: 60782
+      targetPort: 60782
+      protocol: UDP
+      name: mosh-60782
+    
+    - port: 60783
+      targetPort: 60783
+      protocol: UDP
+      name: mosh-60783
+    
+    - port: 60784
+      targetPort: 60784
+      protocol: UDP
+      name: mosh-60784
+    
+    - port: 60785
+      targetPort: 60785
+      protocol: UDP
+      name: mosh-60785
+    
+    - port: 60786
+      targetPort: 60786
+      protocol: UDP
+      name: mosh-60786
+    
+    - port: 60787
+      targetPort: 60787
+      protocol: UDP
+      name: mosh-60787
+    
+    - port: 60788
+      targetPort: 60788
+      protocol: UDP
+      name: mosh-60788
+    
+    - port: 60789
+      targetPort: 60789
+      protocol: UDP
+      name: mosh-60789
+    
+    - port: 60790
+      targetPort: 60790
+      protocol: UDP
+      name: mosh-60790
+    
+    - port: 60791
+      targetPort: 60791
+      protocol: UDP
+      name: mosh-60791
+    
+    - port: 60792
+      targetPort: 60792
+      protocol: UDP
+      name: mosh-60792
+    
+    - port: 60793
+      targetPort: 60793
+      protocol: UDP
+      name: mosh-60793
+    
+    - port: 60794
+      targetPort: 60794
+      protocol: UDP
+      name: mosh-60794
+    
+    - port: 60795
+      targetPort: 60795
+      protocol: UDP
+      name: mosh-60795
+    
+    - port: 60796
+      targetPort: 60796
+      protocol: UDP
+      name: mosh-60796
+    
+    - port: 60797
+      targetPort: 60797
+      protocol: UDP
+      name: mosh-60797
+    
+    - port: 60798
+      targetPort: 60798
+      protocol: UDP
+      name: mosh-60798
+    
+    - port: 60799
+      targetPort: 60799
+      protocol: UDP
+      name: mosh-60799
+    
+    - port: 60800
+      targetPort: 60800
+      protocol: UDP
+      name: mosh-60800
+    
+    - port: 60801
+      targetPort: 60801
+      protocol: UDP
+      name: mosh-60801
+    
+    - port: 60802
+      targetPort: 60802
+      protocol: UDP
+      name: mosh-60802
+    
+    - port: 60803
+      targetPort: 60803
+      protocol: UDP
+      name: mosh-60803
+    
+    - port: 60804
+      targetPort: 60804
+      protocol: UDP
+      name: mosh-60804
+    
+    - port: 60805
+      targetPort: 60805
+      protocol: UDP
+      name: mosh-60805
+    
+    - port: 60806
+      targetPort: 60806
+      protocol: UDP
+      name: mosh-60806
+    
+    - port: 60807
+      targetPort: 60807
+      protocol: UDP
+      name: mosh-60807
+    
+    - port: 60808
+      targetPort: 60808
+      protocol: UDP
+      name: mosh-60808
+    
+    - port: 60809
+      targetPort: 60809
+      protocol: UDP
+      name: mosh-60809
+    
+    - port: 60810
+      targetPort: 60810
+      protocol: UDP
+      name: mosh-60810
+    
+    - port: 60811
+      targetPort: 60811
+      protocol: UDP
+      name: mosh-60811
+    
+    - port: 60812
+      targetPort: 60812
+      protocol: UDP
+      name: mosh-60812
+    
+    - port: 60813
+      targetPort: 60813
+      protocol: UDP
+      name: mosh-60813
+    
+    - port: 60814
+      targetPort: 60814
+      protocol: UDP
+      name: mosh-60814
+    
+    - port: 60815
+      targetPort: 60815
+      protocol: UDP
+      name: mosh-60815
+    
+    - port: 60816
+      targetPort: 60816
+      protocol: UDP
+      name: mosh-60816
+    
+    - port: 60817
+      targetPort: 60817
+      protocol: UDP
+      name: mosh-60817
+    
+    - port: 60818
+      targetPort: 60818
+      protocol: UDP
+      name: mosh-60818
+    
+    - port: 60819
+      targetPort: 60819
+      protocol: UDP
+      name: mosh-60819
+    
+    - port: 60820
+      targetPort: 60820
+      protocol: UDP
+      name: mosh-60820
+    
+    - port: 60821
+      targetPort: 60821
+      protocol: UDP
+      name: mosh-60821
+    
+    - port: 60822
+      targetPort: 60822
+      protocol: UDP
+      name: mosh-60822
+    
+    - port: 60823
+      targetPort: 60823
+      protocol: UDP
+      name: mosh-60823
+    
+    - port: 60824
+      targetPort: 60824
+      protocol: UDP
+      name: mosh-60824
+    
+    - port: 60825
+      targetPort: 60825
+      protocol: UDP
+      name: mosh-60825
+    
+    - port: 60826
+      targetPort: 60826
+      protocol: UDP
+      name: mosh-60826
+    
+    - port: 60827
+      targetPort: 60827
+      protocol: UDP
+      name: mosh-60827
+    
+    - port: 60828
+      targetPort: 60828
+      protocol: UDP
+      name: mosh-60828
+    
+    - port: 60829
+      targetPort: 60829
+      protocol: UDP
+      name: mosh-60829
+    
+    - port: 60830
+      targetPort: 60830
+      protocol: UDP
+      name: mosh-60830
+    
+    - port: 60831
+      targetPort: 60831
+      protocol: UDP
+      name: mosh-60831
+    
+    - port: 60832
+      targetPort: 60832
+      protocol: UDP
+      name: mosh-60832
+    
+    - port: 60833
+      targetPort: 60833
+      protocol: UDP
+      name: mosh-60833
+    
+    - port: 60834
+      targetPort: 60834
+      protocol: UDP
+      name: mosh-60834
+    
+    - port: 60835
+      targetPort: 60835
+      protocol: UDP
+      name: mosh-60835
+    
+    - port: 60836
+      targetPort: 60836
+      protocol: UDP
+      name: mosh-60836
+    
+    - port: 60837
+      targetPort: 60837
+      protocol: UDP
+      name: mosh-60837
+    
+    - port: 60838
+      targetPort: 60838
+      protocol: UDP
+      name: mosh-60838
+    
+    - port: 60839
+      targetPort: 60839
+      protocol: UDP
+      name: mosh-60839
+    
+    - port: 60840
+      targetPort: 60840
+      protocol: UDP
+      name: mosh-60840
+    
+    - port: 60841
+      targetPort: 60841
+      protocol: UDP
+      name: mosh-60841
+    
+    - port: 60842
+      targetPort: 60842
+      protocol: UDP
+      name: mosh-60842
+    
+    - port: 60843
+      targetPort: 60843
+      protocol: UDP
+      name: mosh-60843
+    
+    - port: 60844
+      targetPort: 60844
+      protocol: UDP
+      name: mosh-60844
+    
+    - port: 60845
+      targetPort: 60845
+      protocol: UDP
+      name: mosh-60845
+    
+    - port: 60846
+      targetPort: 60846
+      protocol: UDP
+      name: mosh-60846
+    
+    - port: 60847
+      targetPort: 60847
+      protocol: UDP
+      name: mosh-60847
+    
+    - port: 60848
+      targetPort: 60848
+      protocol: UDP
+      name: mosh-60848
+    
+    - port: 60849
+      targetPort: 60849
+      protocol: UDP
+      name: mosh-60849
+    
+    - port: 60850
+      targetPort: 60850
+      protocol: UDP
+      name: mosh-60850
+    
+    - port: 60851
+      targetPort: 60851
+      protocol: UDP
+      name: mosh-60851
+    
+    - port: 60852
+      targetPort: 60852
+      protocol: UDP
+      name: mosh-60852
+    
+    - port: 60853
+      targetPort: 60853
+      protocol: UDP
+      name: mosh-60853
+    
+    - port: 60854
+      targetPort: 60854
+      protocol: UDP
+      name: mosh-60854
+    
+    - port: 60855
+      targetPort: 60855
+      protocol: UDP
+      name: mosh-60855
+    
+    - port: 60856
+      targetPort: 60856
+      protocol: UDP
+      name: mosh-60856
+    
+    - port: 60857
+      targetPort: 60857
+      protocol: UDP
+      name: mosh-60857
+    
+    - port: 60858
+      targetPort: 60858
+      protocol: UDP
+      name: mosh-60858
+    
+    - port: 60859
+      targetPort: 60859
+      protocol: UDP
+      name: mosh-60859
+    
+    - port: 60860
+      targetPort: 60860
+      protocol: UDP
+      name: mosh-60860
+    
+    - port: 60861
+      targetPort: 60861
+      protocol: UDP
+      name: mosh-60861
+    
+    - port: 60862
+      targetPort: 60862
+      protocol: UDP
+      name: mosh-60862
+    
+    - port: 60863
+      targetPort: 60863
+      protocol: UDP
+      name: mosh-60863
+    
+    - port: 60864
+      targetPort: 60864
+      protocol: UDP
+      name: mosh-60864
+    
+    - port: 60865
+      targetPort: 60865
+      protocol: UDP
+      name: mosh-60865
+    
+    - port: 60866
+      targetPort: 60866
+      protocol: UDP
+      name: mosh-60866
+    
+    - port: 60867
+      targetPort: 60867
+      protocol: UDP
+      name: mosh-60867
+    
+    - port: 60868
+      targetPort: 60868
+      protocol: UDP
+      name: mosh-60868
+    
+    - port: 60869
+      targetPort: 60869
+      protocol: UDP
+      name: mosh-60869
+    
+    - port: 60870
+      targetPort: 60870
+      protocol: UDP
+      name: mosh-60870
+    
+    - port: 60871
+      targetPort: 60871
+      protocol: UDP
+      name: mosh-60871
+    
+    - port: 60872
+      targetPort: 60872
+      protocol: UDP
+      name: mosh-60872
+    
+    - port: 60873
+      targetPort: 60873
+      protocol: UDP
+      name: mosh-60873
+    
+    - port: 60874
+      targetPort: 60874
+      protocol: UDP
+      name: mosh-60874
+    
+    - port: 60875
+      targetPort: 60875
+      protocol: UDP
+      name: mosh-60875
+    
+    - port: 60876
+      targetPort: 60876
+      protocol: UDP
+      name: mosh-60876
+    
+    - port: 60877
+      targetPort: 60877
+      protocol: UDP
+      name: mosh-60877
+    
+    - port: 60878
+      targetPort: 60878
+      protocol: UDP
+      name: mosh-60878
+    
+    - port: 60879
+      targetPort: 60879
+      protocol: UDP
+      name: mosh-60879
+    
+    - port: 60880
+      targetPort: 60880
+      protocol: UDP
+      name: mosh-60880
+    
+    - port: 60881
+      targetPort: 60881
+      protocol: UDP
+      name: mosh-60881
+    
+    - port: 60882
+      targetPort: 60882
+      protocol: UDP
+      name: mosh-60882
+    
+    - port: 60883
+      targetPort: 60883
+      protocol: UDP
+      name: mosh-60883
+    
+    - port: 60884
+      targetPort: 60884
+      protocol: UDP
+      name: mosh-60884
+    
+    - port: 60885
+      targetPort: 60885
+      protocol: UDP
+      name: mosh-60885
+    
+    - port: 60886
+      targetPort: 60886
+      protocol: UDP
+      name: mosh-60886
+    
+    - port: 60887
+      targetPort: 60887
+      protocol: UDP
+      name: mosh-60887
+    
+    - port: 60888
+      targetPort: 60888
+      protocol: UDP
+      name: mosh-60888
+    
+    - port: 60889
+      targetPort: 60889
+      protocol: UDP
+      name: mosh-60889
+    
+    - port: 60890
+      targetPort: 60890
+      protocol: UDP
+      name: mosh-60890
+    
+    - port: 60891
+      targetPort: 60891
+      protocol: UDP
+      name: mosh-60891
+    
+    - port: 60892
+      targetPort: 60892
+      protocol: UDP
+      name: mosh-60892
+    
+    - port: 60893
+      targetPort: 60893
+      protocol: UDP
+      name: mosh-60893
+    
+    - port: 60894
+      targetPort: 60894
+      protocol: UDP
+      name: mosh-60894
+    
+    - port: 60895
+      targetPort: 60895
+      protocol: UDP
+      name: mosh-60895
+    
+    - port: 60896
+      targetPort: 60896
+      protocol: UDP
+      name: mosh-60896
+    
+    - port: 60897
+      targetPort: 60897
+      protocol: UDP
+      name: mosh-60897
+    
+    - port: 60898
+      targetPort: 60898
+      protocol: UDP
+      name: mosh-60898
+    
+    - port: 60899
+      targetPort: 60899
+      protocol: UDP
+      name: mosh-60899
+    
+    - port: 60900
+      targetPort: 60900
+      protocol: UDP
+      name: mosh-60900
+    
+    - port: 60901
+      targetPort: 60901
+      protocol: UDP
+      name: mosh-60901
+    
+    - port: 60902
+      targetPort: 60902
+      protocol: UDP
+      name: mosh-60902
+    
+    - port: 60903
+      targetPort: 60903
+      protocol: UDP
+      name: mosh-60903
+    
+    - port: 60904
+      targetPort: 60904
+      protocol: UDP
+      name: mosh-60904
+    
+    - port: 60905
+      targetPort: 60905
+      protocol: UDP
+      name: mosh-60905
+    
+    - port: 60906
+      targetPort: 60906
+      protocol: UDP
+      name: mosh-60906
+    
+    - port: 60907
+      targetPort: 60907
+      protocol: UDP
+      name: mosh-60907
+    
+    - port: 60908
+      targetPort: 60908
+      protocol: UDP
+      name: mosh-60908
+    
+    - port: 60909
+      targetPort: 60909
+      protocol: UDP
+      name: mosh-60909
+    
+    - port: 60910
+      targetPort: 60910
+      protocol: UDP
+      name: mosh-60910
+    
+    - port: 60911
+      targetPort: 60911
+      protocol: UDP
+      name: mosh-60911
+    
+    - port: 60912
+      targetPort: 60912
+      protocol: UDP
+      name: mosh-60912
+    
+    - port: 60913
+      targetPort: 60913
+      protocol: UDP
+      name: mosh-60913
+    
+    - port: 60914
+      targetPort: 60914
+      protocol: UDP
+      name: mosh-60914
+    
+    - port: 60915
+      targetPort: 60915
+      protocol: UDP
+      name: mosh-60915
+    
+    - port: 60916
+      targetPort: 60916
+      protocol: UDP
+      name: mosh-60916
+    
+    - port: 60917
+      targetPort: 60917
+      protocol: UDP
+      name: mosh-60917
+    
+    - port: 60918
+      targetPort: 60918
+      protocol: UDP
+      name: mosh-60918
+    
+    - port: 60919
+      targetPort: 60919
+      protocol: UDP
+      name: mosh-60919
+    
+    - port: 60920
+      targetPort: 60920
+      protocol: UDP
+      name: mosh-60920
+    
+    - port: 60921
+      targetPort: 60921
+      protocol: UDP
+      name: mosh-60921
+    
+    - port: 60922
+      targetPort: 60922
+      protocol: UDP
+      name: mosh-60922
+    
+    - port: 60923
+      targetPort: 60923
+      protocol: UDP
+      name: mosh-60923
+    
+    - port: 60924
+      targetPort: 60924
+      protocol: UDP
+      name: mosh-60924
+    
+    - port: 60925
+      targetPort: 60925
+      protocol: UDP
+      name: mosh-60925
+    
+    - port: 60926
+      targetPort: 60926
+      protocol: UDP
+      name: mosh-60926
+    
+    - port: 60927
+      targetPort: 60927
+      protocol: UDP
+      name: mosh-60927
+    
+    - port: 60928
+      targetPort: 60928
+      protocol: UDP
+      name: mosh-60928
+    
+    - port: 60929
+      targetPort: 60929
+      protocol: UDP
+      name: mosh-60929
+    
+    - port: 60930
+      targetPort: 60930
+      protocol: UDP
+      name: mosh-60930
+    
+    - port: 60931
+      targetPort: 60931
+      protocol: UDP
+      name: mosh-60931
+    
+    - port: 60932
+      targetPort: 60932
+      protocol: UDP
+      name: mosh-60932
+    
+    - port: 60933
+      targetPort: 60933
+      protocol: UDP
+      name: mosh-60933
+    
+    - port: 60934
+      targetPort: 60934
+      protocol: UDP
+      name: mosh-60934
+    
+    - port: 60935
+      targetPort: 60935
+      protocol: UDP
+      name: mosh-60935
+    
+    - port: 60936
+      targetPort: 60936
+      protocol: UDP
+      name: mosh-60936
+    
+    - port: 60937
+      targetPort: 60937
+      protocol: UDP
+      name: mosh-60937
+    
+    - port: 60938
+      targetPort: 60938
+      protocol: UDP
+      name: mosh-60938
+    
+    - port: 60939
+      targetPort: 60939
+      protocol: UDP
+      name: mosh-60939
+    
+    - port: 60940
+      targetPort: 60940
+      protocol: UDP
+      name: mosh-60940
+    
+    - port: 60941
+      targetPort: 60941
+      protocol: UDP
+      name: mosh-60941
+    
+    - port: 60942
+      targetPort: 60942
+      protocol: UDP
+      name: mosh-60942
+    
+    - port: 60943
+      targetPort: 60943
+      protocol: UDP
+      name: mosh-60943
+    
+    - port: 60944
+      targetPort: 60944
+      protocol: UDP
+      name: mosh-60944
+    
+    - port: 60945
+      targetPort: 60945
+      protocol: UDP
+      name: mosh-60945
+    
+    - port: 60946
+      targetPort: 60946
+      protocol: UDP
+      name: mosh-60946
+    
+    - port: 60947
+      targetPort: 60947
+      protocol: UDP
+      name: mosh-60947
+    
+    - port: 60948
+      targetPort: 60948
+      protocol: UDP
+      name: mosh-60948
+    
+    - port: 60949
+      targetPort: 60949
+      protocol: UDP
+      name: mosh-60949
+    
+    - port: 60950
+      targetPort: 60950
+      protocol: UDP
+      name: mosh-60950
+    
+    - port: 60951
+      targetPort: 60951
+      protocol: UDP
+      name: mosh-60951
+    
+    - port: 60952
+      targetPort: 60952
+      protocol: UDP
+      name: mosh-60952
+    
+    - port: 60953
+      targetPort: 60953
+      protocol: UDP
+      name: mosh-60953
+    
+    - port: 60954
+      targetPort: 60954
+      protocol: UDP
+      name: mosh-60954
+    
+    - port: 60955
+      targetPort: 60955
+      protocol: UDP
+      name: mosh-60955
+    
+    - port: 60956
+      targetPort: 60956
+      protocol: UDP
+      name: mosh-60956
+    
+    - port: 60957
+      targetPort: 60957
+      protocol: UDP
+      name: mosh-60957
+    
+    - port: 60958
+      targetPort: 60958
+      protocol: UDP
+      name: mosh-60958
+    
+    - port: 60959
+      targetPort: 60959
+      protocol: UDP
+      name: mosh-60959
+    
+    - port: 60960
+      targetPort: 60960
+      protocol: UDP
+      name: mosh-60960
+    
+    - port: 60961
+      targetPort: 60961
+      protocol: UDP
+      name: mosh-60961
+    
+    - port: 60962
+      targetPort: 60962
+      protocol: UDP
+      name: mosh-60962
+    
+    - port: 60963
+      targetPort: 60963
+      protocol: UDP
+      name: mosh-60963
+    
+    - port: 60964
+      targetPort: 60964
+      protocol: UDP
+      name: mosh-60964
+    
+    - port: 60965
+      targetPort: 60965
+      protocol: UDP
+      name: mosh-60965
+    
+    - port: 60966
+      targetPort: 60966
+      protocol: UDP
+      name: mosh-60966
+    
+    - port: 60967
+      targetPort: 60967
+      protocol: UDP
+      name: mosh-60967
+    
+    - port: 60968
+      targetPort: 60968
+      protocol: UDP
+      name: mosh-60968
+    
+    - port: 60969
+      targetPort: 60969
+      protocol: UDP
+      name: mosh-60969
+    
+    - port: 60970
+      targetPort: 60970
+      protocol: UDP
+      name: mosh-60970
+    
+    - port: 60971
+      targetPort: 60971
+      protocol: UDP
+      name: mosh-60971
+    
+    - port: 60972
+      targetPort: 60972
+      protocol: UDP
+      name: mosh-60972
+    
+    - port: 60973
+      targetPort: 60973
+      protocol: UDP
+      name: mosh-60973
+    
+    - port: 60974
+      targetPort: 60974
+      protocol: UDP
+      name: mosh-60974
+    
+    - port: 60975
+      targetPort: 60975
+      protocol: UDP
+      name: mosh-60975
+    
+    - port: 60976
+      targetPort: 60976
+      protocol: UDP
+      name: mosh-60976
+    
+    - port: 60977
+      targetPort: 60977
+      protocol: UDP
+      name: mosh-60977
+    
+    - port: 60978
+      targetPort: 60978
+      protocol: UDP
+      name: mosh-60978
+    
+    - port: 60979
+      targetPort: 60979
+      protocol: UDP
+      name: mosh-60979
+    
+    - port: 60980
+      targetPort: 60980
+      protocol: UDP
+      name: mosh-60980
+    
+    - port: 60981
+      targetPort: 60981
+      protocol: UDP
+      name: mosh-60981
+    
+    - port: 60982
+      targetPort: 60982
+      protocol: UDP
+      name: mosh-60982
+    
+    - port: 60983
+      targetPort: 60983
+      protocol: UDP
+      name: mosh-60983
+    
+    - port: 60984
+      targetPort: 60984
+      protocol: UDP
+      name: mosh-60984
+    
+    - port: 60985
+      targetPort: 60985
+      protocol: UDP
+      name: mosh-60985
+    
+    - port: 60986
+      targetPort: 60986
+      protocol: UDP
+      name: mosh-60986
+    
+    - port: 60987
+      targetPort: 60987
+      protocol: UDP
+      name: mosh-60987
+    
+    - port: 60988
+      targetPort: 60988
+      protocol: UDP
+      name: mosh-60988
+    
+    - port: 60989
+      targetPort: 60989
+      protocol: UDP
+      name: mosh-60989
+    
+    - port: 60990
+      targetPort: 60990
+      protocol: UDP
+      name: mosh-60990
+    
+    - port: 60991
+      targetPort: 60991
+      protocol: UDP
+      name: mosh-60991
+    
+    - port: 60992
+      targetPort: 60992
+      protocol: UDP
+      name: mosh-60992
+    
+    - port: 60993
+      targetPort: 60993
+      protocol: UDP
+      name: mosh-60993
+    
+    - port: 60994
+      targetPort: 60994
+      protocol: UDP
+      name: mosh-60994
+    
+    - port: 60995
+      targetPort: 60995
+      protocol: UDP
+      name: mosh-60995
+    
+    - port: 60996
+      targetPort: 60996
+      protocol: UDP
+      name: mosh-60996
+    
+    - port: 60997
+      targetPort: 60997
+      protocol: UDP
+      name: mosh-60997
+    
+    - port: 60998
+      targetPort: 60998
+      protocol: UDP
+      name: mosh-60998
+    
+    - port: 60999
+      targetPort: 60999
+      protocol: UDP
+      name: mosh-60999
+    
+    - port: 61000
       targetPort: 61000
+      protocol: UDP
+      name: mosh-61000
+    
   selector:
     app: irssi-mosh
